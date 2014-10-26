@@ -6,6 +6,7 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
     <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700|Roboto:400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "application" %>
+    <%= yield_content :stylesheets %>
   </head>
 
   <body class="<%= page_classes %>">
