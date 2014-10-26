@@ -1,0 +1,27 @@
+.menu
+  text-align: left
+  position: relative
+
+  li
+    display: inline
+
+    > ul
+      display: none
+      position: absolute
+      width: 208px
+
+      > li
+        display: block
+
+    &:hover
+      > ul
+        display: block
+
+.contact,
+.faq
+  font:
+    family: $istok
+    weight: 900
+  color: $black-0
+  margin-left: 18px
+  text-align: right
