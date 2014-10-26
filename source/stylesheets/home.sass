@@ -1,0 +1,97 @@
+@import saraiva
+
+%section-title
+  color: $black-2
+  font:
+    family: $istok
+    size: 30px
+    weight: 400
+  line-height: em(20)
+
+#saraiva-education
+  background: $white-1
+  padding: 65px 0 45px
+
+  h2
+    @extend %section-title
+    margin-bottom: 60px
+    text-align: center
+
+  ol > li
+    font:
+      family: $helvetica
+      size: em(14)
+    margin-bottom: 76px
+    +span-columns(4)
+
+    p
+      padding-top: 28px
+
+    &.ead
+      margin-right: 0
+
+  .actions
+    display: inline-block
+    margin-left: 22px
+
+    .solutions,
+    .message
+      display: block
+      width: 100%
+
+    .solutions
+      +button("yellow")
+
+    .message
+      border-bottom: 2px solid $black-9
+      font-size: em(13)
+      padding:
+        top: 12px
+        bottom: 2px
+      +transition(all, $transition-speed, ease-in-out)
+
+      &:hover
+        border-bottom-color: $black-2
+
+#points
+  background-color: $yellow-0
+  padding-bottom: 12px
+
+  .content
+    position: relative
+
+  h2
+    @extend %section-title
+    padding-top: 64px
+    margin-bottom: 29px
+
+  h2,
+  ol
+    +span-columns(8)
+    +shift(4)
+
+  li
+    +span-columns(4 of 8)
+    font:
+      family: $helvetica
+      size: em(14)
+    margin-bottom: 50px
+    padding:
+      left: 19px
+      right: 20px
+    position: relative
+
+    i
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+
+  .model
+    bottom: -12px
+    left: 0
+    position: absolute
+
+  .portfolio,
+  .warranty
+    margin-right: 0

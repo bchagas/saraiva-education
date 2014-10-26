@@ -5,56 +5,77 @@ title: Index - Soluções Educacionais Saraiva
   <%= stylesheet_link_tag "home" %>
 <% end %>
 <section id="saraiva-education">
-  <header>
-    <h2>
-      Soluções Educacionais Saraiva: <br>
-      Conteúdo, Tecnologia e Serviços
-    </h2>
-  </header>
+  <div class="content">
+    <header>
+      <h2>
+        Soluções Educacionais Saraiva: <br>
+        Conteúdo, Tecnologia e Serviços
+      </h2>
+    </header>
 
-  <ol>
-    <li>
-      <strong>Aprendizagem Adaptativa</strong>
-      <p>A solução ideal para acompanhar o desempenho de aprendizagem de cada aluno.</p>
-    </li>
+    <ol>
+      <li class="adaptive-learning">
+        <strong>Aprendizagem Adaptativa</strong>
+        <p>A solução ideal para acompanhar o desempenho de aprendizagem de cada aluno.</p>
+      </li>
 
-    <li>
-      <strong>Biblioteca Digital</strong>
-      <p>Acervo de conteúdos digitais Saraiva paraa nova geração de leitores.</p>
-    </li>
+      <li class="digital-library">
+        <strong>Biblioteca Digital</strong>
+        <p>Acervo de conteúdos digitais Saraiva paraa nova geração de leitores.</p>
+      </li>
 
-    <li>
-      <strong>EAD - Educação a Distância</strong>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam nullam.</p>
-    </li>
+      <li class="ead">
+        <strong>EAD - Educação a Distância</strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam nullam.</p>
+      </li>
 
-    <li>
-      <strong>SET - Saraiva Sistema de Ensino Técnico</strong>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam nullam.</p>
-    </li>
+      <li class="set">
+        <strong>SET - Saraiva Sistema de Ensino Técnico</strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quam nullam.</p>
+      </li>
 
-    <li>
-      <strong>SSA - Soluções de Aprendizagem Saraiva</strong>
-      <p>A essência das ferramentas de aprendizagem ativa.</p>
-    </li>
-  </ol>
+      <li class="ssa">
+        <strong>SSA - Soluções de Aprendizagem Saraiva</strong>
+        <p>A essência das ferramentas de aprendizagem ativa.</p>
+      </li>
+    </ol>
 
-  <ul class="actions">
-    <li><%= link_to "Conheça nossas soluções", "" %></li>
-    <li><%= link_to "Se preferir, envie-nos uma mensagem", "" %></li>
-  </ul>
+    <ul class="actions">
+      <li><%= link_to "Conheça nossas soluções", "", class: "solutions" %></li>
+      <li><%= link_to "Se preferir, envie-nos uma mensagem", "", class: "message" %></li>
+    </ul>
+  </div>
 </section>
 
-<section>
-  <header>
-    <h2>Porque escolher a Saraiva</h2>
-  </header>
+<section id="points">
+  <div class="content">
+    <header>
+      <h2>Porque escolher a <strong>Saraiva</strong></h2>
+    </header>
 
-  <ol>
-    <li>Experiência em conteúdos da área universitária aliada à agilidade e flexibilidade e estrutura organizacional que só uma empresa com 100 anos pode oferecer.</li>
-    <li>Portfólio com as soluções mais completas do mercado, unindo tecnologia e serviços inovadores.</li>
-    <li>Soluções desenhadas sob medida para as instituições de Educação Superior.</li>
-    <li>Capacidade de execução e garantia de entrega no prazo, com a melhor relação custo/benefício.</li>
-    <li>Conteúdos desenvolvidos por grandes nomes da educação, com experiência em sala de aula.</li>
-  </ol>
+    <%= image_tag "model.png", alt: "Soluções Educacionais Saraiva - Educação Superior", class: "model" %>
+
+    <ol>
+      <li class="expertise">
+        <%= fa_icon("check-circle") %>
+        Experiência em conteúdos da área universitária aliada à agilidade e flexibilidade e estrutura organizacional que só uma empresa com 100 anos pode oferecer.
+      </li>
+      <li class="portfolio">
+        <%= fa_icon("check-circle") %>
+        Portfólio com as soluções mais completas do mercado, unindo tecnologia e serviços inovadores.
+      </li>
+      <li class="graduation-solutions">
+        <%= fa_icon("check-circle") %>
+        Soluções desenhadas sob medida para as instituições de Educação Superior.
+      </li>
+      <li class="warranty">
+        <%= fa_icon("check-circle") %>
+        Capacidade de execução e garantia de entrega no prazo, com a melhor relação custo/benefício.
+      </li>
+      <li class="classroom-experience">
+        <%= fa_icon("check-circle") %>
+        Conteúdos desenvolvidos por grandes nomes da educação, com experiência em sala de aula.
+      </li>
+    </ol>
+  </div>
 </section>
