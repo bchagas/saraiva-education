@@ -4,19 +4,68 @@
 .content
   +outer-container
 
-body > header
-  background: $white-0
-  box-shadow: 0 2px 5px $black-9
-  padding: 20px 0 10px
+body
+  > header
+    background-color: $white-0
+    box-shadow: 0 2px 5px $black-9
+    padding: 20px 0 10px
 
-  .logo
-    +span-columns(2)
+    .logo
+      +span-columns(2)
 
-  nav
-    +span-columns(5)
-    +shift(5)
-    padding-top: 25px
+    nav
+      padding-top: 25px
+      +span-columns(5)
+      +shift(5)
 
+  > footer
+    background-color: $black-1
+    padding:
+      top: 48px
+      bottom: 112px
+
+    .logo-saraiva
+      +span-columns(3)
+
+    nav
+      padding-top: 3px
+      +span-columns(2)
+      +shift(7)
+
+    ul
+      text-align: left
+
+      li
+        display: inline
+        margin-left: 22px
+
+        &:first-child
+          margin-left: 0
+
+    a
+      color: $black-8
+      font-weight: bold
+      +transition(all, $transition-speed, ease-in-out)
+
+      &:hover
+        color: $white-0
+
+    .copyright
+      background-color: $black-0
+      color: $black-8
+      font-size: em(14)
+      padding:
+        top: 34px
+        bottom: 34px
+      margin-top: 48px
+
+      > p
+        display: block
+        float: none
+        margin:
+          left: auto
+          right: auto
+        width: 940px
 .solutions
   +button("black")
   font:

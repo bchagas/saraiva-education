@@ -36,14 +36,20 @@
     <%= yield %>
 
     <footer>
-      <h1>Saraiva</h1>
+      <div class="content">
+        <h2 class="logo-saraiva"><%= image_tag "logo-saraiva.png", alt: "Logo Saraiva" %></h2>
 
-      <nav>
-        <li><%= link_to "contato", "contato" %></li>
-        <li><%= link_to "FAQ", "faq" %></li>
-      </nav>
+        <nav>
+          <ul>
+            <li><%= link_to "Contato", "contato" %></li>
+            <li><%= link_to "FAQ", "faq" %></li>
+          </ul>
+        </nav>
+      </div>
 
-      <p class="copyright">Copyright ©2014. Editora Saraiva. Todos os direitos reservados.</p>
+      <div class="copyright">
+        <p>Copyright ©2014. Editora Saraiva. Todos os direitos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
