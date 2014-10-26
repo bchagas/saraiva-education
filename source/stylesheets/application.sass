@@ -1,2 +1,26 @@
-@import bourbon
-@import neat
+@import saraiva
+@import navigation
+
+.content
+  +outer-container
+
+body > header
+  background: $white-0
+  box-shadow: 0 2px 5px $black-0
+  padding: 20px 0 10px
+
+  .logo
+    +span-columns(2)
+
+  nav
+    +span-columns(5)
+    +shift(5)
+    padding-top: 25px
+
+.solutions
+  +button("black")
+  font:
+    family: $roboto
+    weight: 700
+  i
+    margin-left: 15px
