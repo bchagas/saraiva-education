@@ -4,29 +4,33 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <title><%= current_page.data.title || "The Middleman" %></title>
-    <link href='http://fonts.googleapis.com/css?family=Istok+Web|Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700|Roboto:400,700' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag "application" %>
   </head>
 
   <body class="<%= page_classes %>">
     <header>
-      <h1>Soluções Educacionais Saraiva</h1>
+      <div class="content">
+        <h1 class="logo">
+          <%= link_to (image_tag("logo.png")), "/", title: "Soluções Educacionais Saraiva" %>
+        </h1>
 
-      <nav>
-        <ul class="menu">
-          <li class="solutions"><a href="#solutions">Conheça as soluções</a>
-            <ul>
-              <li><%= link_to "Aprendizagem adaptiva", "aprendizagem-adaptiva" %></li>
-              <li><%= link_to "Biblioteca digital", "biblioteca-digital" %></li>
-              <li><%= link_to "EAD - Conteúdo e metodologia para educação a distância", "educacao-a-distancia" %></li>
-              <li><%= link_to "SET - Saraiva Sistema de Ensino Técnico", "ensino-tecnico" %></li>
-              <li><%= link_to "SSA - Saraiva Solução de aprendizagem", "ssa" %></li>
-            </ul>
-          </li>
-          <li><%= link_to "contato", "contato" %></li>
-          <li><%= link_to "FAQ", "faq" %></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="menu">
+            <li><a href="#solutions" class="solutions">Conheça as soluções <%= fa_icon "caret-down" %></a>
+              <ul>
+                <li><%= link_to "Aprendizagem adaptiva", "aprendizagem-adaptiva", title: "Aprendizagem adaptiva" %></li>
+                <li><%= link_to "Biblioteca digital", "biblioteca-digital", title: "Biblioteca digital" %></li>
+                <li><%= link_to "EAD - Conteúdo e metodologia para educação a distância", "educacao-a-distancia", title: "EAD - Conteúdo e metodologia para educação a distância" %></li>
+                <li><%= link_to "SET - Saraiva Sistema de Ensino Técnico", "ensino-tecnico", title: "SET - Saraiva Sistema de Ensino Técnico" %></li>
+                <li><%= link_to "SSA - Saraiva Solução de aprendizagem", "ssa", title: "SSA - Saraiva Solução de aprendizagem" %></li>
+              </ul>
+            </li>
+            <li><%= link_to "Contato", "contato", class: "contact" %></li>
+            <li><%= link_to "FAQ", "faq", class: "faq" %></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <%= yield %>
