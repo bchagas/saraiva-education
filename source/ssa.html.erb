@@ -1,0 +1,85 @@
+---
+title: SSA - Saraiva Solução de Aprendizagem
+name: ssa
+---
+
+<section id="intro">
+  <div class="content">
+    <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
+    <%= partial "side_navigation", locals: { current_page: current_page.data.name } %>
+    <header>
+      <h2>SSA - Saraiva Solução de Aprendizagem</h2>
+      <h3>A essência das ferramentas de aprendizagem ativa</h3>
+    </header>
+    <p>
+      A <strong>Saraiva Solução de Aprendizagem</strong> (SSA) traz para sua instituição as mais relevantes ferramentas de aprendizagem ativa para tornar o ambiente universitário ainda mais estimulante e signiﬁcativo.
+      <br>
+      Com excelente relação custo/benefício, ela ainda minimiza o custo com o acervo físico da biblioteca, no que se refere às exigências do MEC de um dos títulos da bibliograﬁa básica e da bibliograﬁa complementar como um todo.
+    </p>
+  </div>
+</section>
+
+<div class="more">
+  <%= fa_icon("angle-down") %>
+  Conheça melhor a solução
+  <%= fa_icon("angle-down") %>
+</div>
+
+<section id="solution">
+  <div class="content">
+    <header>
+      <h2>A solução</h2>
+    </header>
+
+    <ul>
+      <li>Conteúdo Saraiva (Livros impressos e digitais)</li>
+      <li>Atividades de aprendizagem estruturadas</li>
+      <li>Avaliações e questões para simulado</li>
+      <li>Melhores indicadores do OAB e ENADE</li>
+    </ul>
+
+    <p class="support">Apoio: Hoper Educação</p>
+    <%= image_tag "ssa/graph.png" %>
+  </div>
+</section>
+
+<section id="more">
+  <div class="content">
+    <article id="availability">
+      <header>
+        <h2>Disponível para cursos de Administração, Ciências Contábeis, Direito e Tecnológicos, a metodologia da SSA:</h2>
+      </header>
+
+      <ul>
+        <li>atende às habilidades e competências exigidas pelas Diretrizes Curriculares Nacionais;</li>
+        <li>exercita a escrita fundamentada e o hábito da leitura (ao prover uma biblioteca pessoal de livros físicos e digitais) e da pesquisa; </li>
+        <li>estimula o pensamento crítico e o raciocínio lógico, incentivando a autonomia dos alunos;</li>
+        <li>desenvolve as competências cognitivas exigidas pelo Enade;</li>
+        <li>oferece ampla gama de atividades, projetos e avaliações.</li>
+      </ul>
+    </article>
+
+    <article id="offer">
+      <ul>
+        <li>Kit de livros impressos do catálogo da saraiva.</li>
+        <li>Biblioteca digital para alunos e professores.</li>
+        <li>Questões para simulados.</li>
+        <li>Plano de aula adaptado para cada IES, conforme a ementa das disciplinas.</li>
+        <li>Acompanhamento das entregas de trabalhos dos alunos.</li>
+        <li>Treinamento para implantação e capacitação de professores.</li>
+      </ul>
+    </article>
+
+    <article id="technology">
+      <ul>
+        <li>moderno Ambiente Virtual de Aprendizagem (AVA), baseado numa das plataformas educacionais mais reconhecidas e utilizadas no mundo;</li>
+        <li>customização: visual personalizado para a IES e edição de atividades;</li>
+        <li>cardápio de temáticas e atividades de aprendizagem, que ﬁxam o conteúdo essencial de cada disciplina;</li>
+        <li>acompanhamento da evolução da aprendizagem por disciplina de cada aluno pelo próprio AVA;</li>
+        <li>relatórios individualizados de entregas e desempenho.</li>
+      </ul>
+    </article>
+
+    <%= partial "more_solution" %>
+  </div>
+</section>
