@@ -1,9 +1,9 @@
-<nav>
+<nav class="side-navigation">
   <ul>
-    <li><%= link_to "Aprendizagem Adaptativa", "/aprendizagem-adaptiva.html" %></li>
-    <li><%= link_to "Bibliotéca Digital", "/biblioteca-digital.html" %></li>
-    <li><%= link_to "EAD - Conteúdo e Metodologia para Educação a Distância", "/ead.html" %></li>
-    <li><%= link_to "SET - Saraiva Sistema de Ensino Técnico", "/set.html" %></li>
-    <li><%= link_to "SSA - Saraiva Solução de Aprendizagem", "/ssa.html" %></li>
+    <li><%= link_to "Aprendizagem Adaptativa", "/aprendizagem-adaptiva.html", class: current_page === "aprendizagem-adaptiva" ? "active" : "" %></li>
+    <li><%= link_to "Bibliotéca Digital", "/biblioteca-digital.html", class: current_page === "biblioteca-digital" ? "active" : "" %></li>
+    <li><%= link_to "EAD - Conteúdo e Metodologia para Educação a Distância", "/ead.html", class: current_page === "ead" ? "active" : "" %></li>
+    <li><%= link_to "SET - Saraiva Sistema de Ensino Técnico", "/set.html", class: current_page === "set" ? "active" : "" %></li>
+    <li><%= link_to "SSA - Saraiva Solução de Aprendizagem", "/ssa.html", class: current_page === "ssa" ? "active" : "" %></li>
   </ul>
 </nav>
