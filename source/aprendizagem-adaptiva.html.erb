@@ -5,15 +5,14 @@ name: aprendizagem-adaptiva
 
 <section id="intro">
   <div class="content">
-    <%= partial "breadcrumb" %>
-    <%= partial "side_navigation" %>
-
+    <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
+    <%= partial "side_navigation", locals: { current_page: current_page.data.name } %>
     <header>
       <h2>Aprendizagem Adaptativa</h2>
       <h3>A solução ideal para acompanhar o desempenho de aprendizagem de cada aluno</h3>
     </header>
     <p>
-      A Aprendizagem Adaptativa  é uma metodologia de aprendizagem que analisa o desempenho dos alunos em tempo real e oferece conteúdos de maneira personalizada de acordo com as necessidades de cada um. Por meio de uma plataforma online, oferece autonomia ao estudante e diagnósticos detalhados aos gestores.
+      A <strong>Aprendizagem Adaptativa</strong>  é uma metodologia de aprendizagem que analisa o desempenho dos alunos em tempo real e oferece conteúdos de maneira personalizada de acordo com as necessidades de cada um. Por meio de uma plataforma online, oferece autonomia ao estudante e diagnósticos detalhados aos gestores.
       <br>
       Testes objetivos e contínuos de conhecimento são aplicados como forma de identiﬁcar pontos fracos. A plataforma também indica conteúdo em vídeo, além de textos, jogos e simuladores mais apropriados para aumentar o rendimento de cada aluno em determinadas disciplinas ou assuntos.
     </p>
@@ -22,7 +21,7 @@ name: aprendizagem-adaptiva
 
 <div class="more">
   <%= fa_icon("angle-down") %>
-  Conheça a melhor solução
+  Conheça melhor a solução
   <%= fa_icon("angle-down") %>
 </div>
 
@@ -110,11 +109,6 @@ name: aprendizagem-adaptiva
       </ul>
     </article>
 
-    <div class="more-solutions">
-      <p>
-        <strong>Entre em contato com o consultor Saraiva de sua região ou fale conosco: 0800-0117875</strong>
-        Entre em contato com o consultor Saraiva de sua região ou fale conosco: 0800-0117875
-      </p>
-    </div>
+    <%= partial "more_solution" %>
   </div>
 </section>
