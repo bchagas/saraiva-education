@@ -1,0 +1,59 @@
+---
+title: Contato
+---
+
+<section id="intro">
+  <div class="content">
+    <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
+    <header>
+      <h2>Contato</h2>
+      <h3>Reunimos perguntas sobre alguns assuntos para facilitar sua busca e garantir a sua comodidade. <%= link_to "Acesse o FAQ.", "/faq.html" %></h3>
+    </header>
+
+    <div class="contacts">
+      <h3>Central de atendimento</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie justo eget tempor fringilla. Mauris malesuada dignissim ornare metus.</p>
+
+      <h3>SAC</h3>
+
+      <p class="phone">0800-0117875</p>
+      <p class="hour">8h30 às 19h30 (segunda a sexta)</p>
+
+      <%= link_to "Enviar um email", "" %>
+    </div>
+
+    <div class="coach">
+      <h3>Assessoria pedagógica</h3>
+      <p>Reunimos perguntas sobre alguns assuntos para facilitar sua busca e garantir a sua Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie justo eget tempor fringilla. Mauris malesuada dignissim ornare metus.</p>
+    </div>
+  </div>
+</section>
+
+<section id="message">
+  <div class="content">
+    <header>
+      <h2>Se preferir envie-nos uma mensagem</h2>
+    </header>
+
+    <% form_tag '/enviar', :method => 'post' do %>
+      <% field_set_tag class: "inputs" do %>
+        <ol>
+          <li><%= text_field_tag :name, placeholder: "Nome" %><li>
+          <li><%= text_field_tag :email, placeholder: "Email", type: "email" %><li>
+          <li><%= select_tag :subject, options: ["Selecione o assunto", "Reclamação", "Sugestão"] %><li>
+          <li><%= text_field_tag :ddd, placeholder: "DDD", type: "tel" %><li>
+          <li><%= text_field_tag :phone, placeholder: "Telefone", type: "tel" %><li>
+          <li><%= text_area_tag :phone, placeholder: "Digite sua mensagem..." %><li>
+        </ol>
+      <% end %>
+
+      <% field_set_tag class: "actions" do %>
+        <%= submit_tag "Enviar" %>
+      <% end %>
+    <% end %>
+
+    <div class="map">
+      <iframe src="https://maps.google.com.br/maps/ms?msid=200031083761718300220.0004cccdacfb4ad542c90&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;ll=-14.179186,-47.900391&amp;spn=32.804373,51.503906&amp;z=4&amp;output=embed" width="525" height="385" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</section>
