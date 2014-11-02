@@ -1,0 +1,117 @@
+---
+title: EAD - Conteúdo e Metodologia para Educação Distância
+name: ead
+---
+
+<section id="intro">
+  <div class="content">
+    <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
+    <%= partial "side_navigation", locals: { current_page: current_page.data.name } %>
+    <header>
+      <h2>EAD - Conteúdo e Metodologia para educação a distância</h2>
+    </header>
+    <p>
+      A Saraiva apresenta sua solução para Educação a Distância, trazendo o que há de mais signiﬁcativo em novas formas de aprendizagem.
+      Buscando oferecer uma solução completa para sua instituição, reunimos:
+    </p>
+    <ul>
+      <li>conteúdo de qualidade reconhecida, elaborado de acordo com as necessidades da instituição, que atende às demandas do MEC;</li>
+      <li>tecnologia educacional de ponta;</li>
+      <li>ótima relação custo/benefício;</li>
+      <li>ﬂexibilidade: possibilidade de contratação individual de cont   impresso e digital, para atender a disciplinas avulsas que compõem os   20% dos cursos presenciais, ou de pacotes completos (cursos inteiros).</li>
+    </ul>
+  </div>
+</section>
+
+<div class="more">
+  <%= fa_icon("angle-down") %>
+  Conheça melhor a solução
+  <%= fa_icon("angle-down") %>
+</div>
+
+<section id="site">
+  <div class="content">
+    <%= image_tag "ead/screen.png" %>
+    <h2>Exemplos de contúdos disponíveis:</h2>
+    <ul>
+      <li>Todas as disciplinas dos cursos de graduação e pós-graduação de Direito e Gestão;</li>
+      <li>Novas disciplinas conforme necessidade da instituição de ensino.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="methodology">
+  <div class="content">
+    <header>
+      <h2>Metodologia e Conteúdo</h2>
+    </header>
+
+    <ul>
+      <li>
+        Aulas online interativas, fortemente apoiadas em casos e ilustrações.
+      </li>
+
+      <li>
+        <p>Materiais didáticos escritos e validados por professores e curadoria baseada em know-how editorial de 100 anos da Saraiva.</p>
+        <%= image_tag "ead/books.png" %>
+      </li>
+      <li>Atividades interativas e sociais que favorecem a construção coletiva de conhecimento e sugestões de tópicos importantes para discussão entre alunos e professores.</li>
+      <li>Questões objetivas para avaliação de desempenho pontual. O feedback é automático e há encaminhamento para reforço quando necessário.</li>
+      <li>Ampla variedade de objetos digitais para auxíliar o processo de aprendizagem: games, simuladores, infográﬁcos.</li>
+      <li>Biblioteca digital em ePub, que proporciona melhor experiência de leitura para qualquer dispositivo e tamanho de tela, totalmente integrada às aulas online.</li>
+      <li>Espaço dedicado ao professor, com sugestões de fóruns e atividades complementares.</li>
+      <li>Guias para apoiar o processo de ensino-aprendizagem, com manuais de uso do ambiente de aprendizagem e de como estudar a distância, e também sobre etiqueta, antiplágio e outros temas essenciais à educação a distância.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="content">
+    <article id="tecnology">
+      <ul>
+        <li>
+          <%= image_tag(lorem.image("43x48")) %>
+          <p>E-books acessados online via navegador web, sem instalação de aplicativos</p>
+        </li>
+
+        <li>
+          <%= image_tag(lorem.image("43x48")) %>
+          <p>Design responsivo e customizado para a instituição</p>
+        </li>
+
+        <li>
+          <%= image_tag(lorem.image("43x48")) %>
+          <p>Aulas online em formato HTML 5 e padrão SCORM</p>
+        </li>
+
+        <li>
+          <%= image_tag(lorem.image("43x48")) %>
+          <p>Plataforma customizada e com integração do AVA</p>
+        </li>
+
+        <li>
+          <%= image_tag(lorem.image("43x48")) %>
+          <p>Acesso virtual a guias de uso e de boas práticas</p>
+        </li>
+
+        <li>
+          <%= image_tag(lorem.image("43x48")) %>
+          <p>Hyperlinks para os livros digitais no momento de apreensão do conteúdo</p>
+        </li>
+      </ul>
+    </article>
+
+    <article id="services">
+      <ul>
+        <li>Suporte técnico, com tutoriais interativos e dicas de como aproveitar melhor o ambiente virtual de aprendizagem</li>
+        <li>Acompanhamento do progresso do aluno</li>
+        <li>Consultoria acadêmica: ﬂexibilidade na construção de novos conteúdos e customização e tutoriais para professores e alunos</li>
+        <li>Capacitação técnica e suporte administrativo</li>
+        <li>Cadastro do conteúdo digital estruturado e customizável</li>
+        <li>Integração LMS/Sistema de Gestão Acadêmica, com gestor dedicado à implantação da solução</li>
+        <li>Proposta de tutoria baseada em docência</li>
+      </ul>
+    </article>
+    <%= partial "more_solution" %>
+  </div>
+</section>
