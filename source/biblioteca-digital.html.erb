@@ -1,0 +1,72 @@
+---
+title: Biblioteca Digital
+name: biblioteca-digital
+---
+
+<section id="intro">
+  <div class="content">
+    <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
+    <%= partial "side_navigation", locals: { current_page: current_page.data.name } %>
+    <header>
+      <h2>Biblioteca Digital</h2>
+      <h3>Acervo de contúdos digitais Saraiva para a nova geração de leitores.</h3>
+    </header>
+    <p>
+      A <strong>Biblioteca Digital</strong> é um acervo de obras digitais da Editora Saraiva voltadas para o nível superior nas áreas de Direito e Gestão. Ela reúne mais de 2.000 títulos elaborados por autores especialistas e professores das mais conceituadas universidades do Brasil e do mundo.
+      <br>
+      A Biblioteca Digital garante aos usuários acesso aos livros a qualquer dia e hora, de qualquer lugar, em vários dispositivos, proporcionando a melhor experiência de leitura para seus alunos.
+    </p>
+  </div>
+</section>
+
+<div class="more">
+  <%= fa_icon("angle-down") %>
+  Conheça melhor a solução
+  <%= fa_icon("angle-down") %>
+</div>
+
+<section id="site">
+  <div class="content">
+    <%= image_tag "biblioteca-digital/screen.png" %>
+    <h2>Confira o site:</h2>
+    <%= link_to "bibliotecadigital.editorasaraiva.com.br", "bibliotecadigital.editorasaraiva.com.br" %>
+  </div>
+</section>
+
+<section id="advantages">
+  <div class="content">
+    <header>
+      <h2>São muitas vantagens</h2>
+    </header>
+
+    <ul>
+      <li>
+        <%= image_tag(lorem.image("43x48")) %>
+        <p>Formato que acompanha o jeito de estudar da atual geração de alunos.</p>
+      </li>
+
+      <li>
+        <%= image_tag(lorem.image("43x48")) %>
+        <p>A instituição monta a sua bliblioteca de acordo com suas necessidades.</p>
+      </li>
+
+      <li>
+        <%= image_tag(lorem.image("43x48")) %>
+        <p>O aluno é totalmente integrado à plataforma da instituição.</p>
+      </li>
+
+      <li>
+        <%= image_tag(lorem.image("43x48")) %>
+        <p>Comodidade e praticidade para seus alunos.</p>
+      </li>
+
+      <li>
+        <%= image_tag(lorem.image("43x48")) %>
+        <p>Excelente custo/benefício.</p>
+      </li>
+    </ul>
+
+    <%= partial "more_solution" %>
+  </div>
+</section>
+
