@@ -3,6 +3,10 @@ title: Biblioteca Digital
 name: biblioteca-digital
 ---
 
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "biblioteca-digital" %>
+<% end %>
+
 <section id="intro">
   <div class="content">
     <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
@@ -28,8 +32,11 @@ name: biblioteca-digital
 <section id="site">
   <div class="content">
     <%= image_tag "biblioteca-digital/screen.png" %>
-    <h2>Confira o site:</h2>
-    <%= link_to "bibliotecadigital.editorasaraiva.com.br", "bibliotecadigital.editorasaraiva.com.br" %>
+
+    <div class="more-info">
+      <h2>Confira o site:</h2>
+      <%= link_to "bibliotecadigital.editorasaraiva.com.br", "bibliotecadigital.editorasaraiva.com.br" %>
+    </div>
   </div>
 </section>
 
