@@ -2,6 +2,7 @@
 @import saraiva
 @import font-awesome
 @import navigation
+@import backgrounds
 
 .content
   +outer-container
@@ -13,6 +14,8 @@ body
     background-color: $white-0
     box-shadow: 0 2px 5px $black-9
     padding: 20px 0 10px
+    position: relative
+    z-index: 2
 
     .logo
       +span-columns(2)
@@ -73,55 +76,65 @@ body
           right: auto
         width: 940px
 
-.breadcrumb
-  +fill-parent
-  clear: both
-  font:
-    family: $helvetica
-    size: em(13)
-    weight: bold
-  text-transform: uppercase
-  margin-top: 33px
-  padding-bottom: 28px
-
-  ul
-    text-align: left
-
-  a
-    color: $white-2
-
-  li
-    display: inline
-    color: $white-3
-
-.side-navigation
-  box-shadow: 0 0 5px $black-9
-  +span-columns(3)
-  padding: 0 13px
-
-  li
-    border-top: 1px solid $white-0-1
-
-    &:first-child
-      border: none
-  a
-    color: $white-3
-    display: block
-    line-height: em(23)
-    font:
-      size: em(13)
-      weight: bold
-    text-transform: uppercase
-    padding: 20px 20px 20px 0
-
-    &.active
-      color: $black-2
-
 #intro
+  z-index: 2
   header,
   p
     +span-columns(9)
     margin-right: 0
+
+  h2,
+  h3
+    font:
+      family: $istok
+    line-height: em(14)
+
+  h2
+    font:
+      size: em(30)
+      weight: 700
+    margin-bottom: 28px
+
+  h3
+    color: $black-3
+    font:
+      size: em(27)
+      weight: 400
+    margin-bottom: 38px
+    line-height: em(16)
+
+  p
+    color: $black-4
+    font:
+      family: $helvetica
+      size: em(14)
+    margin-bottom: 28px
+
+.more
+  background-color: $black-2
+  color: white
+  font:
+    family: $istok
+    size: em(16)
+  text:
+    transform: uppercase
+    align: center
+  padding: 8px 0
+
+  i
+    font-size: em(22)
+
+.more-solutions
+  font:
+    family: $helvetica
+    size: em(14)
+  padding-top: 34px
+  padding-bottom: 60px
+
+  strong
+    display: block
+    text-transform: uppercase
+    padding-bottom: 20px
 
 .solutions
   +button("black")

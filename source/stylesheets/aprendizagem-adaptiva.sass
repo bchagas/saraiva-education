@@ -1,0 +1,101 @@
+@import saraiva
+
+#points
+  padding-top: 64px
+
+  li
+    +span-columns(6)
+    margin-bottom: 64px
+    font:
+      family: $helvetica
+      size: em(16)
+    text-align: left
+    line-height: em(25)
+
+    &:first-child + li
+      margin-right: 0
+
+      p
+        padding-top: 12px
+
+      & + li
+        p
+          padding-top: 12px
+
+  img,
+  p
+    display: block
+
+  img
+    float: left
+    margin-right: 22px
+
+  p
+    height: 126px
+    padding:
+      right: 25px
+      top: 30px
+
+#availability
+  padding-top: 55px
+
+  h2,
+  h3,
+  h4
+    font:
+      family: $istok
+      size: em(30)
+      weight: 400
+    line-height: em(15)
+    text-align: center
+
+  h3,
+  h4
+    text-align: left
+
+  h3
+    margin-top: 32px
+
+  h4
+    text-align: left
+    font-size: em(18)
+    line-height: em(18)
+
+  .content
+    position: relative
+
+  .model
+    bottom: 0
+    right: 0
+    display: block
+    position: absolute
+
+#oab,
+#enade
+  border-top: 1px solid $yellow-1
+  margin-top: 26px
+  overflow: hidden
+
+  ul
+    margin-top: 42px
+
+  li
+    +span-columns(3)
+
+  p
+    display: block
+    float: left
+    font:
+      family: $helvetica
+      size: em(14)
+    line-height: em(22)
+    width: 73%
+
+  img
+    display: block
+    float: left
+    margin-right: 14px
+
+#enade
+  border-bottom: 1px solid $yellow-1
+  padding-bottom: 32px

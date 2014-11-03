@@ -28,3 +28,48 @@
 
   &:hover
     border-bottom: 3px solid $black-1
+
+.breadcrumb
+  +fill-parent
+  clear: both
+  font:
+    family: $helvetica
+    size: em(13)
+    weight: bold
+  text-transform: uppercase
+  margin-top: 33px
+  padding-bottom: 28px
+
+  ul
+    text-align: left
+
+  a
+    color: $white-2
+
+  li
+    display: inline
+    color: $white-3
+
+.side-navigation
+  background: white
+  box-shadow: 0 0 5px $black-9
+  +span-columns(3)
+  padding: 0 13px
+
+  li
+    border-top: 1px solid $white-0-1
+
+    &:first-child
+      border: none
+  a
+    color: $white-3
+    display: block
+    line-height: em(23)
+    font:
+      size: em(13)
+      weight: bold
+    text-transform: uppercase
+    padding: 20px 20px 20px 0
+
+    &.active
+      color: $black-2

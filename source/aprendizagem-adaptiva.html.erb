@@ -3,6 +3,10 @@ title: Aprendizagem Adaptiva
 name: aprendizagem-adaptiva
 ---
 
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "aprendizagem-adaptiva" %>
+<% end %>
+
 <section id="intro">
   <div class="content">
     <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
@@ -11,11 +15,8 @@ name: aprendizagem-adaptiva
       <h2>Aprendizagem Adaptativa</h2>
       <h3>A solução ideal para acompanhar o desempenho de aprendizagem de cada aluno</h3>
     </header>
-    <p>
-      A <strong>Aprendizagem Adaptativa</strong>  é uma metodologia de aprendizagem que analisa o desempenho dos alunos em tempo real e oferece conteúdos de maneira personalizada de acordo com as necessidades de cada um. Por meio de uma plataforma online, oferece autonomia ao estudante e diagnósticos detalhados aos gestores.
-      <br>
-      Testes objetivos e contínuos de conhecimento são aplicados como forma de identiﬁcar pontos fracos. A plataforma também indica conteúdo em vídeo, além de textos, jogos e simuladores mais apropriados para aumentar o rendimento de cada aluno em determinadas disciplinas ou assuntos.
-    </p>
+    <p>A <strong>Aprendizagem Adaptativa</strong>  é uma metodologia de aprendizagem que analisa o desempenho dos alunos em tempo real e oferece conteúdos de maneira personalizada de acordo com as necessidades de cada um. Por meio de uma plataforma online, oferece autonomia ao estudante e diagnósticos detalhados aos gestores.</p>
+    <p>Testes objetivos e contínuos de conhecimento são aplicados como forma de identiﬁcar pontos fracos. A plataforma também indica conteúdo em vídeo, além de textos, jogos e simuladores mais apropriados para aumentar o rendimento de cada aluno em determinadas disciplinas ou assuntos.</p>
   </div>
 </section>
 
@@ -30,19 +31,19 @@ name: aprendizagem-adaptiva
     <ol>
       <li>
         <%= image_tag "images/aprendizagem-adaptiva/tecnologia-educacional.png" %>
-        <strong>Tecnologia educacional</strong> Atualizada para atender a necessidade de seus alunos e sua instituição.
+        <p><strong>Tecnologia educacional</strong> Atualizada para atender a necessidade de seus alunos e sua instituição.</p>
       </li>
       <li>
         <%= image_tag "images/aprendizagem-adaptiva/conteudo.png" %>
-        <strong>Conteúdo</strong> elaborado por autores e professores renomados, oferecido em formatos que buscam maior engajamento dos alunos.
+        <p><strong>Conteúdo</strong> elaborado por autores e professores renomados, oferecido em formatos que buscam maior engajamento dos alunos.</p>
       </li>
       <li>
         <%= image_tag "images/aprendizagem-adaptiva/relatorios.png" %>
-        <strong>Relatórios</strong> de desempenho para acompanhar o aprendizado dos alunos, de forma individual, por turma e por unidade.
+        <p><strong>Relatórios</strong> de desempenho para acompanhar o aprendizado dos alunos, de forma individual, por turma e por unidade.</p>
       </li>
       <li>
         <%= image_tag "images/aprendizagem-adaptiva/suporte.png" %>
-        <strong>Suporte técnico, integração</strong> com o portal e <strong>customização</strong> para a identidade visual da instituição.
+        <p><strong>Suporte técnico, integração</strong> com o portal e <strong>customização</strong> para a identidade visual da instituição.</p>
       </li>
     </ol>
   </div>
@@ -51,7 +52,7 @@ name: aprendizagem-adaptiva
 <section id="availability">
   <div class="content">
     <header>
-      <h2>Disponível para os exames OAB 1ª Fase e ENADE</h2>
+      <h2>Disponível para os exames <strong>OAB 1ª Fase</strong> e <strong>ENADE</strong></h2>
     </header>
 
     <article id="oab">
@@ -61,28 +62,28 @@ name: aprendizagem-adaptiva
 
       <ul>
         <li>
-          <%= image_tag(lorem.image("43x48")) %>
-          <p>Simulados com questões da banca examinadora para diagnóstico da aprendizagem.</p>
+          <%= image_tag("icons/list.png") %>
+          <p><strong>Simulados</strong> com questões da banca examinadora para <strong>diagnóstico da aprendizagem.</strong></p>
         </li>
 
         <li>
-          <%= image_tag(lorem.image("43x48")) %>
-          <p>65 horas em vídeo para resolução de cada uma das questões apresentadas.</p>
+          <%= image_tag("icons/videoaula.png") %>
+          <p>65 horas em vídeo para <strong>resolução de cada uma das questões</strong> apresentadas.</p>
         </li>
 
         <li>
-          <%= image_tag(lorem.image("43x48")) %>
-          <p>225 horas de aulas em vídeo voltadas para aprofundamento do aprendizado, tratando dos assuntos específicos e mais relevantes para o exame.</p>
+          <%= image_tag("icons/screen.png") %>
+          <p>225 horas de aulas em vídeo voltadas para <strong>aprofundamento do aprendizado</strong>, tratando dos assuntos específicos e mais relevantes para o exame.</p>
         </li>
 
         <li>
-          <%= image_tag(lorem.image("43x48")) %>
+          <%= image_tag("icons/tablet.png") %>
           <p>Curadoria do conteúdo realizada por autores, professores e coordenadores Saraiva, especializados nas diferentes disciplinas do direito.</p>
         </li>
       </ul>
     </article>
 
-    <article id="">
+    <article id="enade">
       <header>
         <h3>Enade</h3>
         <h4>
@@ -93,22 +94,25 @@ name: aprendizagem-adaptiva
 
       <ul>
         <li>
-          <%= image_tag(lorem.image("43x48")) %>
-          <p>Simulados com questões da banca examinadora para diagnóstico da aprendizagem.</p>
+          <%= image_tag("icons/paper.png") %>
+          <p><strong>Simulados</strong> com questões da banca examinadora para diagnóstico da aprendizagem.</p>
         </li>
 
         <li>
-          <%= image_tag(lorem.image("43x48")) %>
-          <p>Vídeos com resolução de questões e voltados para aprofundamento do aprendizado em temas e assuntos relevantes para o exame.</p>
+          <%= image_tag("icons/pc.png") %>
+          <p>Vídeos com resolução de questões e voltados para <strong>aprofundamento do aprendizado</strong> em temas e assuntos relevantes para o exame.</p>
         </li>
 
         <li>
-          <%= image_tag(lorem.image("43x48")) %>
+          <%= image_tag("icons/game.png") %>
           <p>Aplicação de mecânica de jogos para maior engajamento dos alunos.</p>
         </li>
       </ul>
     </article>
 
     <%= partial "more_solution" %>
+
+    <%= image_tag "aprendizagem-adaptiva/model.png", class: "model" %>
   </div>
+
 </section>
