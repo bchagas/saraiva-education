@@ -3,6 +3,14 @@ title: EAD - Conteúdo e Metodologia para Educação Distância
 name: ead
 ---
 
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "ead" %>
+<% end %>
+
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "biblioteca-digital" %>
+<% end %>
+
 <section id="intro">
   <div class="content">
     <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
@@ -10,11 +18,9 @@ name: ead
     <header>
       <h2>EAD - Conteúdo e Metodologia para educação a distância</h2>
     </header>
-    <p>
-      A Saraiva apresenta sua solução para Educação a Distância, trazendo o que há de mais signiﬁcativo em novas formas de aprendizagem.
-      Buscando oferecer uma solução completa para sua instituição, reunimos:
-    </p>
-    <ul>
+    <p>A Saraiva apresenta sua solução para Educação a Distância, trazendo o que há de mais signiﬁcativo em novas formas de aprendizagem.</p>
+    <p>Buscando oferecer uma solução completa para sua instituição, reunimos:</p>
+    <ul class="list">
       <li>conteúdo de qualidade reconhecida, elaborado de acordo com as necessidades da instituição, que atende às demandas do MEC;</li>
       <li>tecnologia educacional de ponta;</li>
       <li>ótima relação custo/benefício;</li>
@@ -32,11 +38,13 @@ name: ead
 <section id="site">
   <div class="content">
     <%= image_tag "ead/screen.png" %>
-    <h2>Exemplos de contúdos disponíveis:</h2>
-    <ul>
-      <li>Todas as disciplinas dos cursos de graduação e pós-graduação de Direito e Gestão;</li>
-      <li>Novas disciplinas conforme necessidade da instituição de ensino.</li>
-    </ul>
+    <div class="more-info">
+      <h2>Exemplos de contúdos disponíveis:</h2>
+      <ul class="list">
+        <li>Todas as disciplinas dos cursos de graduação e pós-graduação de Direito e Gestão;</li>
+        <li>Novas disciplinas conforme necessidade da instituição de ensino.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -47,27 +55,28 @@ name: ead
     </header>
 
     <ul>
-      <li>
-        Aulas online interativas, fortemente apoiadas em casos e ilustrações.
-      </li>
-
+      <li>Aulas online interativas, fortemente apoiadas em casos e ilustrações.</li>
       <li>
         <p>Materiais didáticos escritos e validados por professores e curadoria baseada em know-how editorial de 100 anos da Saraiva.</p>
         <%= image_tag "ead/books.png" %>
       </li>
-      <li>Atividades interativas e sociais que favorecem a construção coletiva de conhecimento e sugestões de tópicos importantes para discussão entre alunos e professores.</li>
-      <li>Questões objetivas para avaliação de desempenho pontual. O feedback é automático e há encaminhamento para reforço quando necessário.</li>
+      <li class="ea8b2d">Atividades interativas e sociais que favorecem a construção coletiva de conhecimento e sugestões de tópicos importantes para discussão entre alunos e professores.</li>
+      <li class="ec9f2e">Questões objetivas para avaliação de desempenho pontual. O feedback é automático e há encaminhamento para reforço quando necessário.</li>
       <li>Ampla variedade de objetos digitais para auxíliar o processo de aprendizagem: games, simuladores, infográﬁcos.</li>
       <li>Biblioteca digital em ePub, que proporciona melhor experiência de leitura para qualquer dispositivo e tamanho de tela, totalmente integrada às aulas online.</li>
-      <li>Espaço dedicado ao professor, com sugestões de fóruns e atividades complementares.</li>
-      <li>Guias para apoiar o processo de ensino-aprendizagem, com manuais de uso do ambiente de aprendizagem e de como estudar a distância, e também sobre etiqueta, antiplágio e outros temas essenciais à educação a distância.</li>
+      <li class="ea8b2d">Espaço dedicado ao professor, com sugestões de fóruns e atividades complementares.</li>
+      <li class="e6792c">Guias para apoiar o processo de ensino-aprendizagem, com manuais de uso do ambiente de aprendizagem e de como estudar a distância, e também sobre etiqueta, antiplágio e outros temas essenciais à educação a distância.</li>
     </ul>
   </div>
 </section>
 
-<section>
+<section id="highlights">
   <div class="content">
     <article id="tecnology">
+      <header>
+        <h2>Tecnologia</h2>
+      </header>
+
       <ul>
         <li>
           <%= image_tag(lorem.image("43x48")) %>
@@ -102,6 +111,10 @@ name: ead
     </article>
 
     <article id="services">
+      <header>
+        <h2>Serviços</h2>
+      </header>
+
       <ul>
         <li>Suporte técnico, com tutoriais interativos e dicas de como aproveitar melhor o ambiente virtual de aprendizagem</li>
         <li>Acompanhamento do progresso do aluno</li>

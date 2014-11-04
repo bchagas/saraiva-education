@@ -81,7 +81,8 @@ body
   z-index: 2
 
   header,
-  p
+  p,
+  .list
     +span-columns(9)
     margin-right: 0
 
@@ -105,13 +106,20 @@ body
     margin-bottom: 38px
     line-height: em(16)
 
-  p
+  p,
+  .list
     color: $black-4
     font:
       family: $helvetica
       size: em(14)
     line-height: em(22)
     margin-bottom: 28px
+
+.list
+  list-style: disc
+  padding-left: 20px
+  font-size: em(14)
+  line-height: em(22)
 
 .more
   background-color: $black-2
@@ -126,6 +134,44 @@ body
 
   i
     font-size: em(22)
+
+#site
+  position: relative
+
+  img
+    margin: 59px 0
+    float: left
+
+  .more-info
+    float: left
+    margin:
+      left: 40px
+      top: 143px
+    width: 330px
+
+    h2
+      font:
+        family: $istok
+        size: em(30)
+        weight: 400
+      line-height: em(20)
+      margin-bottom: 27px
+
+    a
+      border: 3px solid $black-2
+      border-radius: 100px
+      font:
+        family: $helvetica
+        size: 14px
+        weight: 700
+      padding: 10px 20px
+
+      &:hover
+        border-color: $black-4
+        color: $black-4
+
+  .list li
+    margin-bottom: 5px
 
 .more-solutions
   clear: both

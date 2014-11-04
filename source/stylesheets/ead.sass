@@ -1,0 +1,70 @@
+@import saraiva
+
+.more-info
+  margin-top: 91px
+
+#methodology
+  padding: 65px 0
+  @extend %yellow-section
+
+  header
+    border-bottom: 1px solid $white-0-1-2
+    margin-bottom: 32px
+
+  h2
+    text-align: left
+    padding-bottom: 25px
+
+  ul
+    +fill-parent
+
+    li
+      background-color: #E15D29
+      border: 1px solid white
+      color: white
+      +span-columns(4)
+      font-size: em(14)
+      height: 228px
+      margin-right: 0
+      position: relative
+      padding: 23px
+      width: 33.33%
+
+      &:first-child
+        width: 24.33%
+
+        + li
+          background-color: #E6792C
+          width: 75.66%
+
+          p
+            color: white
+            width: 150px
+
+          img
+            display: block
+            position: absolute
+            top: -27px
+            right: 20px
+
+    .ea8b2d
+      background-color: #EA8B2D
+
+    .e6792c
+      background-color: #E6792C
+
+    .ec9f2e
+      background-color: #EC9F2E
+
+#highlights
+  @extend %yellow-section
+
+  header
+    border-bottom: 1px solid $yellow-1
+    margin-bottom: 30px
+
+  h2
+    padding:
+      top: 64px
+      bottom: 26px
+    text-align: left
