@@ -35,6 +35,10 @@
 #advantages
   @extend %yellow-section
 
+  header
+    border-bottom: 1px solid $yellow-1
+    margin-bottom: 30px
+
   h2
     text-align: left
     padding:
@@ -42,9 +46,39 @@
       bottom: 26px
 
   ul
+    border-bottom: 1px solid $yellow-1
     display: block
+    padding-bottom: 35px
     +span-columns(8)
 
   li
     +span-columns(4 of 8)
-    margin-right: 0
+    margin:
+      right: 0
+      bottom: 40px
+
+  img
+    display: block
+    float: left
+    margin-right: 14px
+
+    &.model
+      bottom: 30px
+      right: -16px
+      display: block
+      position: absolute
+      margin-right: 0
+
+  p
+    display: block
+    height: 44px
+    float: left
+    font-size: em(14)
+    width: 76%
+    padding-top: 2px
+
+    &.money
+      padding-top: 10px
+
+.more-solutions
+  margin-bottom: 100px
