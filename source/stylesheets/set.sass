@@ -1,0 +1,70 @@
+@import saraiva
+
+#solutions
+  @extend %yellow-section
+
+  h2
+    text-align: left
+
+  h3
+    font-size: em(14)
+    font-weight: bold
+    margin:
+      top: 0
+      bottom: 42px
+
+  header
+    border-bottom: 1px solid $yellow-1
+    margin-top: 64px
+    padding-bottom: 24px
+
+  .material,
+  .technology,
+  .coach,
+  .advice
+    +span-columns(6)
+    margin-right: 0
+    font-size: em(14)
+    width: 49.9999%
+
+    li
+      height: 64px
+      +span-columns(3 of 6)
+      margin-right: 0
+      padding:
+        left: 25px
+        right: 11px
+      position: relative
+      width: 49.9999%
+
+      i
+        display: block
+        font-size: em(22)
+        position: absolute
+        left: 0
+        top: 0
+
+  .coach
+    border-right: 1px solid $yellow-1
+
+  .technology
+    border-left: 1px solid $yellow-1
+    margin-left: -1px
+
+  .material,
+  .technology
+    margin:
+      top: 45px
+      bottom: 40px
+
+  .technology,
+  .advice
+    padding-left: 50px
+
+  .coach,
+  .advice
+    margin-bottom: 65px
+
+  .more-solutions
+    border-top: 1px solid $yellow-1
+    padding-bottom: 28px

@@ -3,6 +3,10 @@ title: SET - Saraiva Sistema de Ensino Técnico
 name: set
 ---
 
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "set" %>
+<% end %>
+
 <section id="intro">
   <div class="content">
     <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
@@ -10,11 +14,8 @@ name: set
     <header>
       <h2>EAD - Conteúdo e Metodologia para educação a distância</h2>
     </header>
-    <p>
-      O <strong>Saraiva Sistema de Ensino Técnico</strong> (SET) reúne os mais relevantes serviços, conteúdos e tecnologias para atender ao Programa Nacional de Acesso ao Ensino Técnico e EmpregoPronatec). Reconhecendo as particularidades do programa, o SET proporciona à instituiçãogerenciamento completo, da adesão ao SISTEC às estratégias para redução da evasão.
-      <br>
-      O SET oferece uma ótima relação custo/benefício e as melhores práticas para diferenciar os estudantes no mercado de trabalho.
-    </p>
+    <p>O <strong>Saraiva Sistema de Ensino Técnico</strong> (SET) reúne os mais relevantes serviços, conteúdos e tecnologias para atender ao Programa Nacional de Acesso ao Ensino Técnico e EmpregoPronatec). Reconhecendo as particularidades do programa, o SET proporciona à instituiçãogerenciamento completo, da adesão ao SISTEC às estratégias para redução da evasão.</p>
+    <p>O SET oferece uma ótima relação custo/benefício e as melhores práticas para diferenciar os estudantes no mercado de trabalho.</p>
   </div>
 </section>
 
@@ -34,8 +35,8 @@ name: set
       <h3>MATERIAL DIDÁTICO</h3>
 
       <ul>
-        <li>Modular com opções de livros, e-books e apostilas (5 em 1);</li>
-        <li>Em conformidade com  o CNCT.</li>
+        <li><%= fa_icon("check-circle") %> Modular com opções <br>de livros, e-books <br>e apostilas (5 em 1);</li>
+        <li><%= fa_icon("check-circle") %> Em conformidade com <br>o CNCT.</li>
       </ul>
     </div>
 
@@ -43,11 +44,10 @@ name: set
       <h3>TECNOLOGIA EDUCACIONAL</h3>
 
       <ul>
-        <li>Mais de 10.000 questões, ideal para avaliações unificadas;</li>
-        <li>Plataforma responsiva para leitura online;</li>
-        <li>Plataforma responsiva para leitura online;</li>
-        <li>Disciplinas EaD avulsas;</li>
-        <li>Biblioteca Digital para professores e alunos.</li>
+        <li><%= fa_icon("check-circle") %> Mais de 10.000 <br>questões, ideal para <br>avaliações unificadas;</li>
+        <li><%= fa_icon("check-circle") %> Plataforma responsiva para leitura online;</li>
+        <li><%= fa_icon("check-circle") %> Disciplinas EaD avulsas;</li>
+        <li><%= fa_icon("check-circle") %> Biblioteca Digital para professores e alunos.</li>
       </ul>
     </div>
 
@@ -55,20 +55,20 @@ name: set
       <h3>CONSULTORIA OPERACIONAL E REGULATÓRIA</h3>
 
       <ul>
-        <li>Suporte de legislação e regras do Pronatec;</li>
-        <li>Diagnóstico de mercado, desde o dimensionamento da oferta de vagas até o modelo de negócio.</li>
-        <li>Acompanhamento da adesão ao SISTEC;</li>
+        <li><%= fa_icon("check-circle") %> Suporte de legislação <br>e regras do Pronatec;</li>
+        <li><%= fa_icon("check-circle") %> Diagnóstico de mercado, desde o dimensionamento <br>da oferta de vagas até o <br>modelo de negócio.</li>
+        <li><%= fa_icon("check-circle") %> Acompanhamento <br>da adesão ao SISTEC;</li>
       </ul>
     </div>
 
-    <div class="">
+    <div class="advice">
       <h3>ASESSORIA PEDAGÓGICA</h3>
 
       <ul>
-        <li>Elaboração de PPCs;</li>
-        <li>Formação de professores focada no Pronatec;</li>
-        <li>Definição de matrizes;</li>
-        <li>Acompanhamento contínuo do programa na instituição.</li>
+        <li><%= fa_icon("check-circle") %> Elaboração de PPCs;</li>
+        <li><%= fa_icon("check-circle") %> Formação de professores focada no Pronatec;</li>
+        <li><%= fa_icon("check-circle") %> Definição de matrizes;</li>
+        <li><%= fa_icon("check-circle") %> Acompanhamento contínuo do programa na instituição.</li>
       </ul>
     </div>
 
