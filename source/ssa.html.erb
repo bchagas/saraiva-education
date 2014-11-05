@@ -3,6 +3,10 @@ title: SSA - Saraiva Solução de Aprendizagem
 name: ssa
 ---
 
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "ssa" %>
+<% end %>
+
 <section id="intro">
   <div class="content">
     <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
@@ -32,13 +36,14 @@ name: ssa
     </header>
 
     <ul>
-      <li>Conteúdo Saraiva (Livros impressos e digitais)</li>
-      <li>Atividades de aprendizagem estruturadas</li>
-      <li>Avaliações e questões para simulado</li>
-      <li>Melhores indicadores do OAB e ENADE</li>
+      <li class="one">Conteúdo Saraiva (Livros impressos e digitais)</li>
+      <li class="two">Atividades de aprendizagem estruturadas</li>
+      <li class="tree">Avaliações e questões para simulado</li>
+      <li class="four">Melhores indicadores do OAB e ENADE</li>
+      <li class="five">APRENDIZAGEM ATIVA</li>
+      <li class="support">Apoio: <br><strong>Hoper Educação</strong></li>
     </ul>
 
-    <p class="support">Apoio: Hoper Educação</p>
     <%= image_tag "ssa/graph.png" %>
   </div>
 </section>
@@ -51,35 +56,43 @@ name: ssa
       </header>
 
       <ul>
-        <li>atende às habilidades e competências exigidas pelas Diretrizes Curriculares Nacionais;</li>
-        <li>exercita a escrita fundamentada e o hábito da leitura (ao prover uma biblioteca pessoal de livros físicos e digitais) e da pesquisa; </li>
-        <li>estimula o pensamento crítico e o raciocínio lógico, incentivando a autonomia dos alunos;</li>
-        <li>desenvolve as competências cognitivas exigidas pelo Enade;</li>
-        <li>oferece ampla gama de atividades, projetos e avaliações.</li>
+        <li><%= fa_icon("check-circle") %> atende às habilidades e competências exigidas pelas Diretrizes Curriculares Nacionais;</li>
+        <li><%= fa_icon("check-circle") %> exercita a escrita fundamentada e o hábito da leitura (ao prover uma biblioteca pessoal de livros físicos e digitais) e da pesquisa; </li>
+        <li><%= fa_icon("check-circle") %> estimula o pensamento crítico e o raciocínio lógico, incentivando a autonomia dos alunos;</li>
+        <li><%= fa_icon("check-circle") %> desenvolve as competências cognitivas exigidas pelo Enade;</li>
+        <li><%= fa_icon("check-circle") %> oferece ampla gama de atividades, projetos e avaliações.</li>
       </ul>
     </article>
 
     <article id="offer">
+      <header>
+        <h2>O que oferece?</h2>
+      </header>
+
       <ul>
-        <li>Kit de livros impressos do catálogo da saraiva.</li>
-        <li>Biblioteca digital para alunos e professores.</li>
-        <li>Questões para simulados.</li>
-        <li>Plano de aula adaptado para cada IES, conforme a ementa das disciplinas.</li>
-        <li>Acompanhamento das entregas de trabalhos dos alunos.</li>
-        <li>Treinamento para implantação e capacitação de professores.</li>
+        <li><%= image_tag("icons/kit.png") %> Kit de livros impressos do catálogo da saraiva.</li>
+        <li><%= image_tag("icons/library.png") %> Biblioteca digital para alunos e professores.</li>
+        <li><%= image_tag("icons/checklist.png") %> Questões para simulados.</li>
+        <li><%= image_tag("icons/plan.png") %> Plano de aula adaptado para cada IES, conforme a ementa das disciplinas.</li>
+        <li><%= image_tag("icons/calendar.png") %> Acompanhamento das entregas de trabalhos dos alunos.</li>
+        <li><%= image_tag("icons/laptop.png") %> Treinamento para implantação e capacitação de professores.</li>
       </ul>
     </article>
 
     <article id="technology">
+      <header>
+        <h2>Sua avançada tecnologia educacional proporciona:</h2>
+      </header>
       <ul>
-        <li>moderno Ambiente Virtual de Aprendizagem (AVA), baseado numa das plataformas educacionais mais reconhecidas e utilizadas no mundo;</li>
-        <li>customização: visual personalizado para a IES e edição de atividades;</li>
-        <li>cardápio de temáticas e atividades de aprendizagem, que ﬁxam o conteúdo essencial de cada disciplina;</li>
-        <li>acompanhamento da evolução da aprendizagem por disciplina de cada aluno pelo próprio AVA;</li>
-        <li>relatórios individualizados de entregas e desempenho.</li>
+        <li><%= fa_icon("check-circle") %> moderno Ambiente Virtual de Aprendizagem (AVA), baseado numa das plataformas educacionais mais reconhecidas e utilizadas no mundo;</li>
+        <li><%= fa_icon("check-circle") %> customização: visual personalizado para a IES e edição de atividades;</li>
+        <li><%= fa_icon("check-circle") %> cardápio de temáticas e atividades de aprendizagem, que ﬁxam o conteúdo essencial de cada disciplina;</li>
+        <li><%= fa_icon("check-circle") %> acompanhamento da evolução da aprendizagem por disciplina de cada aluno pelo próprio AVA;</li>
+        <li><%= fa_icon("check-circle") %> relatórios individualizados de entregas e desempenho.</li>
       </ul>
     </article>
 
+    <%= image_tag "ssa/model.png", class: "model" %>
     <%= partial "more_solution" %>
   </div>
 </section>

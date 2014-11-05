@@ -1,0 +1,123 @@
+@import saraiva
+
+#solution
+  header
+    margin-top: 64px
+
+  h2
+    font:
+      family: $istok
+      size: em(30)
+      weight: 400
+
+  ul
+    display: block
+    position: absolute
+    +size(942 505)
+
+    li
+      font-size: em(14)
+      position: absolute
+      +size(115 60)
+
+      &.one
+        left: 455px
+        top: 247px
+
+      &.two
+        left: 519px
+        top: -6px
+
+      &.tree
+        left: 585px
+        top: 163px
+
+      &.four
+        left: 660px
+        top: -41px
+
+      &.five
+        left: 780px
+        top: 32px
+        font-weight: bold
+
+      &.support
+        left: 465px
+        bottom: 38px
+        width: 156px
+
+  img
+    margin-top: -44px
+
+#more
+  margin-top: -5px
+  @extend %yellow-section
+
+  h2
+    text-align: left
+    line-height: em(22)
+
+  header
+    margin: 64px 0 33px
+
+#availability,
+#technology
+  border-bottom: 1px solid $yellow-1
+  overflow: hidden
+
+  li
+    height: 75px
+    +span-columns(4)
+    margin-right: 0
+    font-size: em(14)
+    line-height: em(22)
+    width: 32.9999%
+    position: relative
+    margin-bottom: 42px
+    padding:
+      left: 22px
+      right: 60px
+
+  i
+    display: block
+    font-size: em(22)
+    position: absolute
+    left: 0
+    top: 2px
+
+#offer
+  overflow: hidden
+
+  header
+    margin-top: 42px
+
+  li
+    height: 50px
+    +span-columns(4)
+    margin-right: 0
+    font-size: em(14)
+    line-height: em(22)
+    position: relative
+    padding:
+      left: 62px
+    margin-bottom: 30px
+
+  img
+    display: block
+    position: absolute
+    top: -10px
+    left: 0
+
+#technology
+  border-top: 1px solid $yellow-1
+
+  header
+    margin-top: 23px
+
+  li
+    padding-right: 40px
+
+.model
+  position: absolute
+  bottom: 40px
+  right: 0
