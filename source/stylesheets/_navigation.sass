@@ -61,6 +61,29 @@
 
     &:first-child
       border: none
+
+    &.aprendizagem-adaptiva
+      a:before
+        background: #C3232B
+
+    &.biblioteca-digital
+      a:before
+        background: #014E76
+        top: 12px
+
+    &.ead
+      a:before
+        background: #E6792C
+        top: 30px
+
+    &.set
+      a:before
+        background: #5C8D40
+
+    &.ssa
+      a:before
+        background: #5E5E9B
+
   a
     color: $white-3
     display: block
@@ -70,6 +93,16 @@
       weight: bold
     text-transform: uppercase
     padding: 20px 20px 20px 0
+    position: relative
 
     &.active
       color: $black-2
+
+      &:before
+        content: ""
+        display: block
+        +size(6 31)
+        position: absolute
+        left: -13px
+        top: 22px
+
