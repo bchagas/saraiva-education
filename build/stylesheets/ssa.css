@@ -1,0 +1,170 @@
+/* line 2, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 2, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#more h2,
+#more h3,
+#more h4 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  line-height: 0.9375em;
+  text-align: center; }
+/* line 12, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#more h3,
+#more h4 {
+  text-align: left; }
+/* line 16, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#more h3 {
+  margin-top: 32px; }
+/* line 19, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#more h4 {
+  text-align: left;
+  font-size: 1.125em;
+  line-height: 1.125em; }
+/* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#more .content {
+  position: relative; }
+
+/* line 4, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+#solution header {
+  margin-top: 64px; }
+/* line 7, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+#solution h2 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400; }
+/* line 13, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+#solution ul {
+  display: block;
+  position: absolute;
+  width: 942px;
+  height: 505px; }
+  /* line 18, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #solution ul li {
+    font-size: 0.875em;
+    position: absolute;
+    width: 115px;
+    height: 60px; }
+    /* line 23, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+    #solution ul li.one {
+      left: 455px;
+      top: 247px; }
+    /* line 27, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+    #solution ul li.two {
+      left: 519px;
+      top: -6px; }
+    /* line 31, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+    #solution ul li.tree {
+      left: 585px;
+      top: 163px; }
+    /* line 35, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+    #solution ul li.four {
+      left: 660px;
+      top: -41px; }
+    /* line 39, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+    #solution ul li.five {
+      left: 780px;
+      top: 32px;
+      font-weight: bold; }
+    /* line 44, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+    #solution ul li.support {
+      left: 465px;
+      bottom: 38px;
+      width: 156px; }
+/* line 49, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+#solution img {
+  margin-top: -44px; }
+
+/* line 52, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+#more {
+  margin-top: -5px; }
+  /* line 56, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #more h2 {
+    text-align: left;
+    line-height: 1.375em; }
+  /* line 60, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #more header {
+    margin: 64px 0 33px; }
+
+/* line 63, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+#availability,
+#technology {
+  border-bottom: 1px solid #e5db36;
+  overflow: hidden; }
+  /* line 68, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #availability li,
+  #technology li {
+    height: 75px;
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 31.91489%;
+    margin-right: 0;
+    font-size: 0.875em;
+    line-height: 1.375em;
+    width: 32.9999%;
+    position: relative;
+    margin-bottom: 42px;
+    padding-left: 22px;
+    padding-right: 60px; }
+    /* line 40, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+    #availability li:last-child,
+    #technology li:last-child {
+      margin-right: 0; }
+  /* line 81, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #availability i,
+  #technology i {
+    display: block;
+    font-size: 1.375em;
+    position: absolute;
+    left: 0;
+    top: 2px; }
+
+/* line 88, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+#offer {
+  overflow: hidden; }
+  /* line 91, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #offer header {
+    margin-top: 42px; }
+  /* line 94, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #offer li {
+    height: 50px;
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 31.91489%;
+    margin-right: 0;
+    font-size: 0.875em;
+    line-height: 1.375em;
+    position: relative;
+    padding-left: 62px;
+    margin-bottom: 30px; }
+    /* line 40, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+    #offer li:last-child {
+      margin-right: 0; }
+  /* line 105, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #offer img {
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 0; }
+
+/* line 111, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+#technology {
+  border-top: 1px solid #e5db36; }
+  /* line 114, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #technology header {
+    margin-top: 23px; }
+  /* line 117, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+  #technology li {
+    padding-right: 40px; }
+
+/* line 120, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/ssa.sass */
+.model {
+  position: absolute;
+  bottom: 40px;
+  right: 0; }

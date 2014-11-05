@@ -1,0 +1,90 @@
+/* line 2, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 2, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#advantages h2,
+#advantages h3,
+#advantages h4 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  line-height: 0.9375em;
+  text-align: center; }
+/* line 12, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#advantages h3,
+#advantages h4 {
+  text-align: left; }
+/* line 16, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#advantages h3 {
+  margin-top: 32px; }
+/* line 19, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#advantages h4 {
+  text-align: left;
+  font-size: 1.125em;
+  line-height: 1.125em; }
+/* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#advantages .content {
+  position: relative; }
+
+/* line 6, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+#advantages header {
+  border-bottom: 1px solid #e5db36;
+  margin-bottom: 30px; }
+/* line 10, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+#advantages h2 {
+  text-align: left;
+  padding-top: 64px;
+  padding-bottom: 26px; }
+/* line 16, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+#advantages ul {
+  border-bottom: 1px solid #e5db36;
+  display: block;
+  padding-bottom: 35px;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 65.95745%; }
+  /* line 40, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+  #advantages ul:last-child {
+    margin-right: 0; }
+/* line 22, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+#advantages li {
+  float: left;
+  display: block;
+  margin-right: 3.22581%;
+  width: 48.3871%;
+  margin-right: 0;
+  margin-bottom: 40px; }
+  /* line 40, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+  #advantages li:last-child {
+    margin-right: 0; }
+/* line 28, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+#advantages img {
+  display: block;
+  float: left;
+  margin-right: 14px; }
+  /* line 33, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+  #advantages img.model {
+    bottom: 30px;
+    right: -16px;
+    display: block;
+    position: absolute;
+    margin-right: 0; }
+/* line 40, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+#advantages p {
+  display: block;
+  height: 44px;
+  float: left;
+  font-size: 0.875em;
+  width: 76%;
+  padding-top: 2px; }
+  /* line 48, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+  #advantages p.money {
+    padding-top: 10px; }
+
+/* line 51, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/biblioteca-digital.sass */
+.more-solutions {
+  margin-bottom: 100px; }

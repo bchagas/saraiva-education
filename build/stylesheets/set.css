@@ -1,0 +1,118 @@
+/* line 2, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 2, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#solutions h2,
+#solutions h3,
+#solutions h4 {
+  font-family: "Istok Web", sans-serif;
+  font-size: 1.875em;
+  font-weight: 400;
+  line-height: 0.9375em;
+  text-align: center; }
+/* line 12, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#solutions h3,
+#solutions h4 {
+  text-align: left; }
+/* line 16, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#solutions h3 {
+  margin-top: 32px; }
+/* line 19, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#solutions h4 {
+  text-align: left;
+  font-size: 1.125em;
+  line-height: 1.125em; }
+/* line 24, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/_sections.sass */
+#solutions .content {
+  position: relative; }
+
+/* line 6, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions h2 {
+  text-align: left; }
+/* line 9, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions h3 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 42px; }
+/* line 16, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions header {
+  border-bottom: 1px solid #e5db36;
+  margin-top: 64px;
+  padding-bottom: 24px; }
+/* line 21, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions .material,
+#solutions .technology,
+#solutions .coach,
+#solutions .advice {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%;
+  margin-right: 0;
+  font-size: 0.875em;
+  width: 49.9999%; }
+  /* line 40, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+  #solutions .material:last-child,
+  #solutions .technology:last-child,
+  #solutions .coach:last-child,
+  #solutions .advice:last-child {
+    margin-right: 0; }
+  /* line 30, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+  #solutions .material li,
+  #solutions .technology li,
+  #solutions .coach li,
+  #solutions .advice li {
+    height: 64px;
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 47.82609%;
+    margin-right: 0;
+    padding-left: 25px;
+    padding-right: 11px;
+    position: relative;
+    width: 49.9999%; }
+    /* line 40, /Users/brunochagas/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/neat-1.5.0/app/assets/stylesheets/grid/_span-columns.scss */
+    #solutions .material li:last-child,
+    #solutions .technology li:last-child,
+    #solutions .coach li:last-child,
+    #solutions .advice li:last-child {
+      margin-right: 0; }
+    /* line 40, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+    #solutions .material li i,
+    #solutions .technology li i,
+    #solutions .coach li i,
+    #solutions .advice li i {
+      display: block;
+      font-size: 1.375em;
+      position: absolute;
+      left: 0;
+      top: 0; }
+/* line 47, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions .coach {
+  border-right: 1px solid #e5db36; }
+/* line 50, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions .technology {
+  border-left: 1px solid #e5db36;
+  margin-left: -1px; }
+/* line 54, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions .material,
+#solutions .technology {
+  margin-top: 45px;
+  margin-bottom: 40px; }
+/* line 60, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions .technology,
+#solutions .advice {
+  padding-left: 50px; }
+/* line 64, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions .coach,
+#solutions .advice {
+  margin-bottom: 65px; }
+/* line 68, /Users/brunochagas/Documents/Workspace/Projects/saraiva-education/source/stylesheets/set.sass */
+#solutions .more-solutions {
+  border-top: 1px solid #e5db36;
+  padding-bottom: 28px; }
