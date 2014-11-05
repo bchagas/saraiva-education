@@ -6,6 +6,32 @@ title: Index - Soluções Educacionais Saraiva
 <% end %>
 
 <section id="saraiva-education">
+  <div class="home-carousel">
+    <div class="carousel">
+      <ul>
+        <li>
+          <div class="item ssa">
+            <h2>
+              <strong>SSA – Saraiva Solução de Aprendizagem</strong> <br>
+              A essência das ferramentas <br> de aprendizagem ativa.
+            </h2>
+            <%= link_to "Saiba mais", "ssa.html", class: "more" %>
+            <%= image_tag("carousel/slide-2.png") %>
+          </div>
+        </li>
+
+        <li>
+          <div class="item">
+            <h2>Soluções Educacionais <strong>Saraiva</strong> <br>para a Educação Superior</h2>
+            <%= image_tag("carousel/slide-1.png") %>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <%= link_to image_tag("carousel/prev.png"), "#", class: "jcarousel-prev" %>
+    <%= link_to image_tag("carousel/next.png"), "#", class: "jcarousel-next" %>
+  </div>
   <div class="content">
     <header>
       <h2>
@@ -80,3 +106,38 @@ title: Index - Soluções Educacionais Saraiva
     </ol>
   </div>
 </section>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "jcarousel" %>
+  <script>
+    $(function() {
+      $('.carousel').jcarousel();
+
+      $('.carousel')
+        .on('jcarousel:create jcarousel:reload', function() {
+            var element = $(this),
+                width = element.innerWidth();
+
+            // This shows 1 item at a time.
+            // Divide `width` to the number of items you want to display,
+            // eg. `width = width / 3` to display 3 items at a time.
+            element.jcarousel('items').css('width', width + 'px');
+        })
+        .jcarousel({
+            // Your configurations options
+        });
+
+      $('.carousel').jcarouselAutoscroll({
+        autostart: true
+      });
+
+      $('.jcarousel-prev').jcarouselControl({
+        target: '-=1'
+      });
+
+      $('.jcarousel-next').jcarouselControl({
+          target: '+=1'
+      });
+    });
+  </script>
+<% end %>

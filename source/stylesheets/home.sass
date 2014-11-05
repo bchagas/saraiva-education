@@ -10,7 +10,6 @@
 
 #saraiva-education
   background: $white-1
-  padding: 65px 0 45px
 
   h2
     @extend %section-title
@@ -96,3 +95,83 @@
   .portfolio,
   .warranty
     margin-right: 0
+
+.carousel
+  position: relative
+  overflow: hidden
+
+  ul
+    width: 20000em
+    position: relative
+    list-style: none
+    margin: 0
+    padding: 0
+
+
+  li
+    float: left
+
+  img
+    width: 100%
+
+#saraiva-education
+  .home-carousel
+    position: relative
+    margin-bottom: 45px
+
+    .item
+      position: relative
+
+      &.ssa
+        h2
+          +size(675 105)
+          text-align: left
+          margin-left: 40%
+          margin-top: 3%
+          color: $black-2
+
+        strong
+          color: $black-2
+
+    .more
+      color: $black-2
+      border: 3px solid $black-2
+      border-radius: 100px
+      background: transparent
+      display: block
+      position: absolute
+      top: 375px
+      margin-left: 40%
+      text-transform: none
+      font:
+        family: $helvetica
+        size: 14px
+        weight: 700
+      padding: 10px 40px
+
+    ul li
+      h2
+        color: white
+        display: block
+        top: 0
+        left: 0
+        width: 100%
+        text-align: center
+        position: absolute
+        top: 190px
+        z-index: 2
+      strong
+        color: white
+
+.jcarousel-prev,
+.jcarousel-next
+  display: block
+  position: absolute
+  top: 45%
+  z-index: 3
+
+.jcarousel-prev
+  left: 0
+
+.jcarousel-next
+  right: 0
