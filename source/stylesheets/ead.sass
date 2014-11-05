@@ -59,27 +59,81 @@
 #highlights
   @extend %yellow-section
 
-  header
-    border-bottom: 1px solid $yellow-1
-    margin-bottom: 30px
-
   h2
     padding:
       top: 64px
       bottom: 26px
     text-align: left
 
-#technology li
-  +span-columns(4)
-  margin-right: 0
-  height: 60px
+  ul
+    overflow: hidden
 
-  img,
-  p
-    display: block
-    float: left
+#technology
+  header
+    border-bottom: 1px solid $yellow-1
+    margin-bottom: 30px
+
+  li
+    +span-columns(4)
+    margin-right: 0
+    height: 60px
+    margin-bottom: 12px
+
+    &:first-child p
+      padding-top: 0
+
+    img,
+    p
+      display: block
+      float: left
+      font-size: em(14)
+
+    p
+      width: 82.5%
+      padding:
+        left: 5px
+        top: 7px
+
+#services
+  header
+    border-top: 1px solid $yellow-1
+    margin-top: 30px
+
+    h2
+      padding-top: 32px
+
+  ul
+    border-bottom: 1px solid $yellow-1
+    +span-columns(8)
     font-size: em(14)
 
-  p
-    width: 70%
-    padding-left: 14px
+    li
+      +span-columns(4 of 8)
+      height: 78px
+      margin:
+        right: 0
+        bottom: 14px
+      padding:
+        left: 25px
+        right: 30px
+      position: relative
+
+      i
+        display: block
+        font-size: em(18)
+        position: absolute
+        left: 0
+        top: 0
+
+#highlights
+  .more-solutions
+    margin-bottom: 0
+
+  .content
+    position: relative
+
+  .model
+    bottom: 122px
+    right: -20px
+    display: block
+    position: absolute
