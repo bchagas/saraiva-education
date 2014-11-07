@@ -31,9 +31,9 @@ title: Index - Soluções Educacionais Saraiva
 
     <%= link_to image_tag("carousel/prev.png"), "#", class: "jcarousel-prev" %>
     <%= link_to image_tag("carousel/next.png"), "#", class: "jcarousel-next" %>
-    <%= link_to image_tag("carousel/down.png"), "#", class: "arrow-down" %>
+    <%= link_to image_tag("carousel/down.png"), "#", class: "arrow-down go-to-anchor", data: { target: "#start" } %>
   </div>
-  <div class="content">
+  <div class="content" id="start">
     <header>
       <h2>
         Soluções Educacionais Saraiva: <br>
