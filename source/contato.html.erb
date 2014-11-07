@@ -1,6 +1,11 @@
 ---
 title: Contato
+name: contato
 ---
+
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "contato" %>
+<% end %>
 
 <section id="intro">
   <div class="content">
@@ -11,20 +16,28 @@ title: Contato
     </header>
 
     <div class="contacts">
+      <div class="image">
+        <%= image_tag "contato/central.png" %>
+      </div>
+
       <h3>Central de atendimento</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie justo eget tempor fringilla. Mauris malesuada dignissim ornare metus.</p>
 
       <h3>SAC</h3>
 
-      <p class="phone">0800-0117875</p>
-      <p class="hour">8h30 às 19h30 (segunda a sexta)</p>
+      <p class="phone"><%= fa_icon("phone-square") %> 0800-0117875</p>
+      <p class="hour"><%= fa_icon("clock-o") %> 8h30 às 19h30 (segunda a sexta)</p>
 
-      <%= link_to "Enviar um email", "" %>
+      <%= link_to "#{fa_icon("envelope")} Enviar um email", "mailto:", class: "send-mail" %>
     </div>
 
     <div class="coach">
       <h3>Assessoria pedagógica</h3>
       <p>Reunimos perguntas sobre alguns assuntos para facilitar sua busca e garantir a sua Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie justo eget tempor fringilla. Mauris malesuada dignissim ornare metus.</p>
+
+      <div class="image">
+        <%= image_tag "contato/assessoria.png" %>
+      </div>
     </div>
   </div>
 </section>
@@ -35,15 +48,15 @@ title: Contato
       <h2>Se preferir envie-nos uma mensagem</h2>
     </header>
 
-    <% form_tag "/enviar", method: "post" do %>
+    <% form_tag "/enviar", method: "post", id: "contact" do %>
       <% field_set_tag class: "inputs" do %>
         <ol>
-          <li><%= text_field_tag :name, placeholder: "Nome" %><li>
-          <li><%= text_field_tag :email, placeholder: "Email", type: "email" %><li>
-          <li><%= select_tag :subject, options: ["Selecione o assunto", "Reclamação", "Sugestão"] %><li>
-          <li><%= text_field_tag :ddd, placeholder: "DDD", type: "tel" %><li>
-          <li><%= text_field_tag :phone, placeholder: "Telefone", type: "tel" %><li>
-          <li><%= text_area_tag :phone, placeholder: "Digite sua mensagem..." %><li>
+          <li><%= text_field_tag :name, placeholder: "Nome" %></li>
+          <li><%= text_field_tag :email, placeholder: "Email", type: "email" %></li>
+          <li class="select"><%= select_tag :subject, options: ["Selecione o assunto", "Reclamação", "Sugestão"] %></li>
+          <li class="ddd"><%= text_field_tag :ddd, placeholder: "DDD", type: "tel" %></li>
+          <li class="phone"><%= text_field_tag :phone, placeholder: "Telefone", type: "tel" %></li>
+          <li><%= text_area_tag :body, placeholder: "Digite sua mensagem..." %></li>
         </ol>
       <% end %>
 
@@ -57,3 +70,7 @@ title: Contato
     </div>
   </div>
 </section>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "jquery.customSelect", "jquery.maskedInput", "jquery.validate", "contato" %>
+<% end %>

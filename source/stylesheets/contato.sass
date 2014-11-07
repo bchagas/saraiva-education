@@ -1,0 +1,210 @@
+@import saraiva
+
+#intro
+  padding-bottom: 0
+
+  header,
+  p,
+  h2
+    +fill-parent
+    float: none
+
+  h3
+    font-size: em(14)
+    line-height: em(24)
+    margin-bottom: 20px
+
+    a
+      font-weight: 700
+      border-bottom: 3px solid $black-9
+      padding-bottom: 3px
+      +transition(all, $transition-speed, ease-in-out)
+
+      &:hover
+        border-bottom-color: $black-2
+
+  header
+    border-bottom: 1px solid $border
+
+.image
+  display: inline
+  float: left
+  +size(340 325)
+
+  img
+    display: block
+    margin: 45px auto 0
+
+#intro
+  .contacts
+    border-bottom: 1px solid $black-9
+    padding-bottom: 37px
+
+    h3,
+    p
+      float: left
+      width: 595px
+      margin-bottom: 0
+
+    h3
+      margin:
+        top: 32px
+        bottom: 12px
+      font:
+        family: $istok
+        size: em(23)
+      padding-bottom: 0
+
+    .phone,
+    .hour
+      font:
+        size: em(18)
+        weight: bold
+      line-height: em(32)
+
+      i
+        color: rgb(173, 173, 173)
+
+    .hour
+      margin-bottom: 20px
+
+  .send-mail
+    +button("black")
+    font:
+      size: em(16)
+      weight: bold
+    margin-top: 40px
+
+    i
+      margin-right: 5px
+
+  .coach
+    overflow: hidden
+
+    .image
+      +size(275 300)
+      margin-top: -181px
+      float: right
+
+    h3,
+    p
+      display: block
+      float: left
+      width: 595px
+
+    h3
+      margin-top: 102px
+      font:
+        family: $istok
+        size: em(30)
+        weight: 700
+
+#message
+  background: $white-0-1-1
+  padding-top: 34px
+
+  header
+    margin-bottom: 23px
+
+  h2
+    font:
+      size: em(23)
+      family: $istok
+
+  form
+    +span-columns(5)
+
+  .map
+    +span-columns(7)
+    border-radius: 5px
+    margin-top: 5px
+
+  input,
+  textarea,
+  .customSelect
+    border: 3px solid $border
+    margin: 5px 0 11px
+    border-radius: 10px
+    font:
+      family: $istok
+      size: em(16)
+      weight: 700
+    padding: 7px 13px 8px
+    width: 100%
+
+    &:focus
+      outline: none
+      border-color: $black-1
+
+    &.error
+      border-color: #DB484B
+
+  [aria-invalid="true"] + .customSelect
+    border-color: #DB484B
+
+  [aria-invalid="false"] + .customSelect
+    border-color: $border
+
+  select
+    z-index: 2
+
+  .customSelectInner
+    display: block
+    position: relative
+    width: 100% !important
+
+    &:before
+      content: "\F0D7"
+      color: $border
+      position: absolute
+      font: normal normal normal 18px/1 FontAwesome
+      right: 3px
+      top: 3px
+
+  textarea
+    height: 146px
+    resize: none
+
+  .ddd,
+  .phone
+    display: inline
+    float: left
+
+  .ddd
+    width: 79px
+    margin-right: 16px
+
+  .phone
+    width: 284px
+
+  input[type="submit"]
+    background-color: $black-1
+    border: none
+    border-radius: 5px
+    color: white
+    cursor: pointer
+    width: auto
+
+#name-error,
+#email-error,
+#ddd-error,
+#phone-error
+  display: none !important
+
+.error-message
+  background: #DB484B
+  border: 3px solid #8C2E2F
+  border-radius: 10px
+  color: white
+  font:
+    family: $istok
+    size: em(16)
+    weight: 700
+  padding: 7px 13px 8px
+  margin-bottom: 10px
+  position: relative
+  width: 100%
+
+  i
+    cursor: pointer
+    font-size: em(16)
