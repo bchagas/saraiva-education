@@ -49,13 +49,13 @@ $(function(){
 
       submitHandler: function(form) {
         var successMessage = "<div class='success-message'><i class='fa fa-check'></i> Seu email foi enviado com sucesso. Obrigado.</div>",
-            errorMessage = "<div class='error-message'><i class='fa fa-check'></i>Desculpe, ocorreu um erro no servidor, tente novamente mais tarde.</div>",
+            errorMessage = "<div class='error-message'><i class='fa fa-close'></i>Desculpe, ocorreu um erro no servidor, tente novamente mais tarde.</div>",
             url = "submit.php";
 
         $.ajax({
           type: "post",
           url: url,
-          data: form.serialize(),
+          data: $(form).serialize(),
           datType: "json"
         })
         .done(function(response){
