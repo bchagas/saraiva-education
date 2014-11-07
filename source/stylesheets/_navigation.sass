@@ -6,48 +6,48 @@
     display: inline
 
     > ul
+      background-color: $black-1
       display: none
       position: absolute
-      width: 208px
-      margin-top: 10px
+      width: 206px
+      margin-top: 5px
       border-bottom-left-radius: 5px
       border-bottom-right-radius: 5px
+      z-index: 4
 
       > li
         display: block
         font:
           size: em(14)
           weight: 700
+        +transition(all, $transition-speed, ease-in-out)
+
+        &:hover
+          &.aprendizagem-adaptiva
+            background: #C3232B
+
+          &.biblioteca-digital
+            background: #014E76
+            top: 12px
+
+          &.ead
+            background: #E6792C
+            top: 30px
+
+          &.set
+            background: #5C8D40
+
+          &.ssa
+            background: #5E5E9B
 
         a
           display: block
           color: white
           padding: 15px 40px 15px 15px
-          +transition(all, $transition-speed, ease-in-out)
-
-          &:hover
-            color: $white-2
 
         &:last-child
           border-bottom-left-radius: 5px
           border-bottom-right-radius: 5px
-
-        &.aprendizagem-adaptiva
-          background: #C3232B
-
-        &.biblioteca-digital
-          background: #014E76
-          top: 12px
-
-        &.ead
-          background: #E6792C
-          top: 30px
-
-        &.set
-          background: #5C8D40
-
-        &.ssa
-          background: #5E5E9B
 
     &:hover
       > ul

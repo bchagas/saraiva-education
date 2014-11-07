@@ -99,6 +99,7 @@
 .carousel
   position: relative
   overflow: hidden
+  z-index: 1
 
   ul
     width: 20000em
@@ -118,6 +119,13 @@
   .home-carousel
     position: relative
     margin-bottom: 45px
+
+    .arrow-down
+      display: block
+      margin: -47px auto 0
+      position: relative
+      +size(59 44)
+      z-index: 1
 
     .item
       position: relative
