@@ -48,7 +48,7 @@ name: contato
       <h2>Se preferir envie-nos uma mensagem</h2>
     </header>
 
-    <% form_tag "/enviar", method: "post", id: "contact" do %>
+    <% form_tag "submit.php", method: "post", id: "contact" do %>
       <% field_set_tag class: "inputs" do %>
         <ol>
           <li><%= text_field_tag :name, placeholder: "Nome" %></li>
