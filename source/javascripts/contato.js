@@ -63,6 +63,8 @@ function formValidate() {
 
     submitHandler: function(form) {
       form.submit();
+      var fullMessage = "<div class='success-message'><i class='fa fa-check'></i> Seu email foi enviado com sucesso. Obrigado.</div>";
+      $(fullMessage).insertBefore("form");
     }
 	});
 }
