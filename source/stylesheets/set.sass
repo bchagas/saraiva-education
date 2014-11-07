@@ -24,13 +24,15 @@
   .advice
     +span-columns(6)
     margin-right: 0
-    font-size: em(14)
     width: 49.9999%
 
     li
+      font-size: em(14)
+      line-height: em(24)
       height: 64px
       +span-columns(3 of 6)
-      margin-right: 0
+      margin:
+        right: 0
       padding:
         left: 25px
         right: 11px
@@ -51,6 +53,9 @@
     border-left: 1px solid $yellow-1
     margin-left: -1px
 
+    li
+      height: 72px
+
   .material,
   .technology
     margin:
@@ -63,7 +68,7 @@
 
   .coach,
   .advice
-    margin-bottom: 65px
+    margin-bottom: 60px
 
   .more-solutions
     border-top: 1px solid $yellow-1
