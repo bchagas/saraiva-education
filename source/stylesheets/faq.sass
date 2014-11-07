@@ -1,0 +1,65 @@
+@import saraiva
+
+#intro
+  padding-bottom: 0
+
+  header,
+  p,
+  h2
+    +fill-parent
+    float: none
+
+  h3
+    font-size: em(14)
+    line-height: em(24)
+    margin-bottom: 20px
+
+    a
+      font-weight: 700
+      border-bottom: 3px solid $black-9
+      padding-bottom: 3px
+      +transition(all, $transition-speed, ease-in-out)
+
+      &:hover
+        border-bottom-color: $black-2
+
+  header
+    border-bottom: 1px solid $border
+
+#questions
+  +outer-container
+  padding-bottom: 32px
+  margin-top: 33px
+
+  .question
+    background-color: #F2F2F2
+    border-radius: 5px
+    font-size: em(14)
+    line-height: em(28)
+    padding: 30px 32px
+    margin-top: 18px
+
+    &:first-child
+      margin-top: 0
+
+    > p
+      margin-bottom: 8px
+
+    .answer
+      border-top: 1px solid $border
+      display: none
+
+    a
+      font-weight: 700
+      border-bottom: 3px solid $black-9
+      padding-bottom: 3px
+      +transition(all, $transition-speed, ease-in-out)
+
+      &:hover
+        border-bottom-color: $black-2
+
+    i
+      color: $black-9
+      font:
+        size: em(20)
+        weight: bold

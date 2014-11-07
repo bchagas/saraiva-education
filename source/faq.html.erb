@@ -1,0 +1,34 @@
+---
+title: FAQ
+name: faq
+---
+
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag "faq" %>
+<% end %>
+
+<section id="intro">
+  <div class="content">
+    <%= partial "breadcrumb", locals: { current_page: current_page.data.title } %>
+    <header>
+      <h2>Perguntas frequentes</h2>
+      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sit amet nibh nec facilisis. <br> Sed non ipsum ac diam faucibus nullam</h3>
+    </header>
+</section>
+
+<section id="questions">
+  <% 10.times do %>
+    <div class="question">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sit amet nibh nec facilisis. <br> Sed non ipsum ac diam faucibus nullam?</p>
+      <%= link_to "#{fa_icon("angle-right")} Resposta", "#" %>
+      <p class="answer">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent semper porta lectus at porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi condimentum tempor mauris non egestas. Nulla vestibulum vulputate elit eget porta. Nunc dictum nisi in commodo lacinia. Donec lorem ante, dapibus eu sapien eget, eleifend accumsan urna. Nunc eu dui vel neque sed.
+      </p>
+    </div>
+  <% end %>
+</section>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "faq" %>
+<% end %>
+
