@@ -37,7 +37,16 @@ name: ead
 
 <section id="site">
   <div class="content">
-    <%= image_tag "ead/screen.png" %>
+    <div class="gallery">
+      <div class="gallery-content">
+        <ul>
+          <li><%= image_tag "ead/image-1.png" %></li>
+          <li><%= image_tag "ead/image-1.png" %></li>
+          <li><%= image_tag "ead/image-1.png" %></li>
+      </div>
+
+      <div class="jcarousel-pagination"></div>
+    </div>
     <div class="more-info">
       <h2>Exemplos de contúdos disponíveis:</h2>
       <ul class="list">
@@ -130,3 +139,28 @@ name: ead
     <%= image_tag "ead/model.png", class: "model" %>
   </div>
 </section>
+
+<% content_for :javascripts do %>
+  <%= javascript_include_tag "jcarousel" %>
+  <script>
+    $(function() {
+      $('.gallery-content').jcarousel();
+      $('.gallery-content').jcarouselAutoscroll({
+        autostart: true
+      });
+
+      $('.jcarousel-pagination')
+      .on('jcarouselpagination:active', 'a', function() {
+              $(this).addClass('active');
+      })
+      .on('jcarouselpagination:inactive', 'a', function() {
+          $(this).removeClass('active');
+      })
+      .jcarouselPagination({
+        item: function(page) {
+          return '<a href="#' + page + '">' + page + '</a>';
+        }
+      });
+    });
+  </script>
+<% end %>

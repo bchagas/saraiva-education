@@ -129,6 +129,61 @@
         left: 0
         top: 0
 
+#site
+  .gallery
+    background: url("../images/ead/computer-base.png") no-repeat center center
+    +size(566 375)
+    margin: 59px 0
+    float: left
+    position: relative
+
+    .gallery-content
+      margin:
+        left: 56px
+        top: 62px
+        bottom: 46px
+      overflow: hidden
+      +size(455 264)
+
+      img
+        margin: 0
+        position: relative
+        overflow: hidden
+        z-index: 1
+
+      ul
+        width: 20000em
+        position: relative
+        list-style: none
+        margin: 0
+        padding: 0
+
+
+      li
+        float: left
+
+      img
+        width: 100%
+
+.jcarousel-pagination
+  text-align: center
+  position: absolute
+  left: 45.999%
+
+  a
+    display: inline-block
+    background-color: #B4B4B1
+    border-radius: 100px
+    margin-left: 5px
+    +hide-text
+    +size(12 12)
+
+    &:first-child
+      margin-left: 0
+
+    &.active
+      background-color: #292929
+
 #highlights
   .more-solutions
     margin-bottom: 0

@@ -112,7 +112,9 @@ title: Index - Soluções Educacionais Saraiva
   <%= javascript_include_tag "jcarousel" %>
   <script>
     $(function() {
-      $('.carousel').jcarousel();
+      $('.carousel').jcarousel({
+        wrap: 'circular'
+      });
 
       $('.carousel')
         .on('jcarousel:create jcarousel:reload', function() {
