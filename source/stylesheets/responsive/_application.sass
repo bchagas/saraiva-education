@@ -1,14 +1,91 @@
 +media($small)
-  body > header
-    .logo
-      +span-columns(2 of 4)
+  body
+    > header
+      .logo
+        +span-columns(2 of 4)
+        margin:
+          left: 10px
+          right: 10px
+
+        img
+          width: 65%
+
+      nav
+        +span-columns(2 of 4)
+        +shift(0)
+
+    > footer
+      .copyright > p
+        padding-right: 60px
+        width: 95%
+
+      .logo-saraiva
+        +span-columns(2 of 4)
+        margin:
+          right: 0
+          left: 10px
+
+        img
+          width: 85%
+
+      ul
+        text-align: right
+        padding-right: 10px
+      nav
+        +span-columns(2 of 4)
+        margin-left: 0
+        padding-top: 0
+        float: right
+
+    .side-navigation,
+    .breadcrumb
+      float: none
       margin:
-        left: 10px
-        right: 10px
+        left: auto
+        right: auto
+      width: 95%
 
+    .side-navigation
+      margin-bottom: 20px
+
+    &.aprendizagem-adaptiva,
+    &.biblioteca-digital
+      #intro, #points, #site
+        background: none
+
+    #site
       img
-        width: 65%
+        width: 100%
+        margin-bottom: 20px
 
-    nav
-      +span-columns(2 of 4)
-      +shift(0)
+      .more-info
+        +mobile-block
+        margin-top: 0
+        margin-bottom: 20px
+        overflow: hidden
+
+        a
+          display: block
+
+        h2
+          font-size: em(22)
+          margin-bottom: 10px
+
+    #intro
+      header,
+      p,
+      .list
+        float: none
+        +outer-container
+        width: 95%
+        &:last-child
+          margin-right: auto
+
+      h2
+        font-size: em(22)
+
+      h3
+        font-size: em(18)
+
+    .more-solutions
+      +mobile-block
