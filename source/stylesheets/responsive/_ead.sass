@@ -1,0 +1,46 @@
++media($small)
+  #methodology
+    padding: 0
+
+    h2
+      font-size: em(22)
+
+    header
+      +mobile-block
+      padding-top: 20px
+
+    ul
+      li
+        width: 100%
+        height: auto
+
+        &:first-child
+          width: 100%
+
+          & + li
+            width: 100%
+
+            img
+              +hide-on-mobile
+
+  #highlights
+    header
+      +mobile-block
+
+    h2
+      font-size: em(22)
+      padding-top: 35px
+
+    #technology,
+    #services
+      ul
+        +mobile-block
+
+      li
+        float: none
+        padding-right: 0
+        overflow: hidden
+        width: 100%
+
+    .model
+      +hide-on-mobile
