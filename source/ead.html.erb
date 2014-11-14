@@ -48,7 +48,7 @@ name: ead
       <div class="jcarousel-pagination"></div>
     </div>
     <div class="more-info">
-      <h2>Exemplos de contúdos disponíveis:</h2>
+      <h2>Exemplos de conteúdos disponíveis:</h2>
       <ul class="list">
         <li>Todas as disciplinas dos cursos de graduação e pós-graduação de Direito e Gestão;</li>
         <li>Novas disciplinas conforme necessidade da instituição de ensino.</li>
@@ -145,6 +145,15 @@ name: ead
   <script>
     $(function() {
       $('.gallery-content').jcarousel();
+      $('.gallery-content').on('jcarousel:create jcarousel:reload', function() {
+        var element = $(this),
+            width = element.innerWidth();
+
+        // This shows 1 item at a time.
+        // Divide `width` to the number of items you want to display,
+        // eg. `width = width / 3` to display 3 items at a time.
+        element.jcarousel('items').css('width', width + 'px');
+      });
       $('.gallery-content').jcarouselAutoscroll({
         autostart: true
       });
