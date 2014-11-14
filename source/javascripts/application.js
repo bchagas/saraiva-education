@@ -8,5 +8,9 @@ $(document).ready(function(){
       scrollTop: $(target).offset().top
     }, 500);
   });
+
+  $(".menu .solutions").on("click", function(event) {
+    event.preventDefault();
+  });
 });
 

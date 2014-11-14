@@ -5,7 +5,7 @@
         +span-columns(2 of 4)
         margin:
           left: 10px
-          right: 10px
+          right: 0
 
         img
           width: 65%
@@ -13,6 +13,26 @@
       nav
         +span-columns(2 of 4)
         +shift(0)
+        padding-top: 0
+
+        .solutions
+          display: block
+          font-size: em(12)
+          padding: 10px
+
+          i
+            margin-left: 5px
+
+      .menu li
+        a
+          font-size: em(12)
+
+          &.contact-page
+            margin-left: 0
+
+        > ul
+          margin-top: -5px
+          left: -56px
 
     > footer
       .copyright > p
@@ -52,7 +72,8 @@
     &.biblioteca-digital,
     &.ead,
     &.set,
-    &.ssa
+    &.ssa,
+    &.faq
       #intro,
       #points,
       #site,
@@ -97,3 +118,65 @@
 
     .more-solutions
       +mobile-block
+
+    #questions
+      +mobile-block
+
+      .question
+        padding: 20px 22px
+
+    #intro
+      .contacts,
+      .coach
+        +mobile-block
+        p,
+        h3
+          +size(100% auto)
+
+      .contacts
+        .phone,
+        .hour
+          font-size: em(14)
+
+        .image
+          +size(100% auto)
+
+        .send-mail
+          font-size: em(14)
+
+      .coach
+        position: relative
+        padding-top: 270px
+
+        h3
+          margin-top: 50px
+          font-size: em(20)
+          line-height: em(18)
+
+        .image
+          +size(100% auto)
+          float: none
+          position: absolute
+          top: 0
+          left: 0
+          margin-top: 0
+
+    #message
+      form,
+      header
+        +mobile-block
+        float: none
+
+      h2
+        font-size: em(22)
+        line-height: em(20)
+
+      .phone
+        width: 209px
+
+      .map
+        +mobile-block
+        float: none
+        &:last-child
+          margin-right: auto
+
