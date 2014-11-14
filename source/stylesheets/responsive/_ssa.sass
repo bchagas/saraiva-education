@@ -1,0 +1,66 @@
++media($small)
+  #solution
+    +mobile-block
+    position: relative
+
+    header
+      margin-top: 15px
+
+    h2
+      font-size: em(22)
+      line-height: em(22)
+
+    img
+      margin-top: 0
+      opacity: .5
+      z-index: 1
+
+    ul
+      top: 19px
+      left: 0
+      +size(100% 100%)
+      z-index: 2
+
+      li
+        width: 60%
+
+        &.one,
+        &.two,
+        &.tree,
+        &.four,
+        &.support
+          left: 120px
+
+        &.one
+          top: 0
+
+        &.two
+          top: 42px
+
+        &.tree
+          top: 42px * 2
+
+        &.four
+          top: 42px * 3
+
+        &.support
+          +size(auto auto)
+          bottom: 26px
+          font-size: em(12)
+
+  #more .content
+    +mobile-block
+
+    header
+      margin-top: 30px
+
+    h2
+      font-size: em(22)
+      line-height: em(22)
+
+    li
+      +mobile-block
+      margin-left: 0
+
+    .model
+      +hide-on-mobile
