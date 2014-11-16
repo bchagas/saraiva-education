@@ -27,8 +27,12 @@
         a
           font-size: em(12)
 
-          &.contact-page
-            margin-left: 0
+          &.solutions
+            margin-top: 11px
+
+          &.contact-page,
+          &.faq-page
+            +hide-on-mobile
 
         > ul
           margin-top: -5px
@@ -61,7 +65,6 @@
         padding-top: 0
         float: right
 
-    .side-navigation,
     .breadcrumb
       float: none
       margin:
@@ -70,7 +73,7 @@
       width: 95%
 
     .side-navigation
-      margin-bottom: 20px
+      +hide-on-mobile
 
     &.aprendizagem-adaptiva,
     &.biblioteca-digital,
