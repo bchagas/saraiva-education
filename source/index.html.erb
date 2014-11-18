@@ -10,13 +10,57 @@ title: Index - Soluções Educacionais Saraiva
     <div class="carousel">
       <ul>
         <li>
-          <div class="item ssa">
+          <div class="item highlights">
             <h2>
               <strong>SSA – Saraiva Solução de Aprendizagem</strong> <br>
               A essência das ferramentas <br> de aprendizagem ativa.
             </h2>
             <%= link_to "Saiba mais", "ssa.html", class: "more" %>
-            <%= image_tag("carousel/slide-2.png") %>
+            <%= image_tag("carousel/ssa.png") %>
+          </div>
+        </li>
+
+        <li>
+          <div class="item highlights">
+            <h2>
+              <strong>Aprendizagem adaptativa</strong> <br>
+              A solução ideal para acompanhar o desenpenho de aprendizagem de cada aluno.
+            </h2>
+            <%= link_to "Saiba mais", "aprendizagem-adaptiva.html", class: "more" %>
+            <%= image_tag("carousel/aprendizagem-adaptativa.jpg") %>
+          </div>
+          </li>
+
+          <li>
+          <div class="item highlights">
+            <h2>
+              <strong>Bibliotéca digital</strong> <br>
+              Acervo de conteúdos digitais <b>Saraiva</b> para a nova geração de leitores.
+            </h2>
+            <%= link_to "Saiba mais", "biblioteca-digital.html", class: "more" %>
+            <%= image_tag("carousel/biblioteca-digital.jpg") %>
+          </div>
+          </li>
+
+          <li>
+          <div class="item highlights">
+            <h2>
+              <strong>EAD</strong> <br>
+              Conteúdo e metodologia para educação a distância.
+            </h2>
+            <%= link_to "Saiba mais", "ead.html", class: "more" %>
+            <%= image_tag("carousel/ead.jpg") %>
+          </div>
+          </li>
+
+          <li>
+          <div class="item highlights">
+            <h2>
+              <strong>SET</strong> <br>
+              Saraiva Sistema de Ensino Técnico.
+            </h2>
+            <%= link_to "Saiba mais", "set.html", class: "more" %>
+            <%= image_tag("carousel/set.jpg") %>
           </div>
         </li>
 
@@ -139,7 +183,7 @@ title: Index - Soluções Educacionais Saraiva
       });
 
       $('.jcarousel-next').jcarouselControl({
-          target: '+=1'
+        target: '+=1'
       });
     });
   </script>
