@@ -1,0 +1,1 @@
+$(document).ready(function(){var t=$(".question > a");t.on("click",function(t){t.preventDefault();var i=$(this).next("p");i.animate({height:"toggle","margin-top":"20px","padding-top":"20px"},function(){$(this).is(":visible")||$(this).css({"margin-top":"0","padding-top":"0"})})})});
